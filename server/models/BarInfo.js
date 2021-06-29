@@ -17,11 +17,8 @@ const barInfoSchema = new Schema({
   topMenuItem: {
     type: String,
   },
-  menuItemImage: {
-    type: Blob,
-  },
 });
 
-const Tech = model("Tech", techSchema);
+const BarInfo = model("BarInfo", barInfoSchema);
 
-module.exports = Tech;
+module.exports = BarInfo;
