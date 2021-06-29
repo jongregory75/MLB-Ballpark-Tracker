@@ -1,4 +1,4 @@
-const { BallPark, BarInfo } = require("../models");
+const { BallPark } = require("../models");
 const { Profile } = require("../models");
 const { signToken } = require("../utils/auth");
 //TODO Build out resolvers.  This code is currently boilerplate from the MERN Miniproject codebase
@@ -22,6 +22,14 @@ const resolvers = {
       if (!profile) {
         throw new AuthenticationError("No profile with this email found!");
       }
+      const correctPw = await profile.isCorrectPassword(password);
+
+      if (!correctPw) {
+        throw new AuthenticationError("Incorrect password!");
+      }
+
+      const token = signToken(profile);
+      return { token, profile };
     },
   },
 };

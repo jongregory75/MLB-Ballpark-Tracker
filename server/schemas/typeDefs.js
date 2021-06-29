@@ -14,34 +14,34 @@ const typeDefs = gql`
     franchise_code: String
     all_star_sw: String
     sport_code: String
-    address_city:  String
+    address_city: String
     city: String
-    name_display_full:  String
-    spring_league_abbrev:String
+    name_display_full: String
+    spring_league_abbrev: String
     time_zone_alt: String
     sport_id: String
-    venue_id:  String
-    mlb_org_id:  String
-    time_zone_generic:  String
-    mlb_org:   String
+    venue_id: String
+    mlb_org_id: String
+    time_zone_generic: String
+    mlb_org: String
     last_year_of_play: String
-    league_full:  String
-    home_opener_time:  String
-    address_province:  String
-    league_id:  String
-    name_abbrev:  String
-    bis_team_code:  String
-    league:  String
-    spring_league:  String
-    base_url:  String
-    address_zip:  String
-    sport_code_display:  String
-    mlb_org_short:  String
+    league_full: String
+    home_opener_time: String
+    address_province: String
+    league_id: String
+    name_abbrev: String
+    bis_team_code: String
+    league: String
+    spring_league: String
+    base_url: String
+    address_zip: String
+    sport_code_display: String
+    mlb_org_short: String
     time_zone: String
-    address_line1:  String
-    mlb_org_brief:  String
-    address_line2:  String
-    season:  String
+    address_line1: String
+    mlb_org_brief: String
+    address_line2: String
+    season: String
     address_line3: String
     division_abbrev: String
     name_display_short: String
@@ -52,8 +52,8 @@ const typeDefs = gql`
     address_country: String
     mlb_org_abbrev: String
     division: String
-    team_code:  String
-    name:  String
+    team_code: String
+    name: String
     website_url: String
     sport_code_name: String
     first_year_of_play: String
@@ -83,8 +83,8 @@ const typeDefs = gql`
     ballparks: [BallPark]
   }
   type Mutation {
-    signUp(email: String! String! password: String!): Auth
-    signIn(email: String! String! password: String!): Auth
+    signUp(email: String!, password: String!): Auth
+    signIn(email: String!, password: String!): Auth
   }
 `;
 
