@@ -1,31 +1,28 @@
 const { BallPark, BarInfo } = require("../models");
-
+const { Profile } = require("../models");
+const { signToken } = require("../utils/auth");
 //TODO Build out resolvers.  This code is currently boilerplate from the MERN Miniproject codebase
 
 const resolvers = {
   Query: {
-    tech: async () => {
-      return Tech.find({});
-    },
-    matchups: async (parent, { _id }) => {
-      const params = _id ? { _id } : {};
-      return Matchup.find(params);
+    ballparks: async () => {
+      return BallPark.find({});
     },
   },
   Mutation: {
-    createMatchup: async (parent, args) => {
-      const matchup = await Matchup.create(args);
-      return matchup;
+    signUp: async (parent, { email, password }) => {
+      const profile = await Profile.create({ email, password });
+      console.log(profile);
+      const token = signToken(profile);
+      return { token, profile };
     },
-    createVote: async (parent, { _id, techNum }) => {
-      const vote = await Matchup.findOneAndUpdate(
-        { _id },
-        { $inc: { [`tech${techNum}_votes`]: 1 } },
-        { new: true }
-      );
-      return vote;
+    signIn: async (parent, { email, password }) => {
+      const profile = await Profile.findOne({ email });
+
+      if (!profile) {
+        throw new AuthenticationError("No profile with this email found!");
+      }
     },
   },
 };
-
 module.exports = resolvers;
