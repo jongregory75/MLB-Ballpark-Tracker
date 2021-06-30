@@ -6,7 +6,10 @@ const { signToken } = require("../utils/auth");
 const resolvers = {
   Query: {
     ballparks: async () => {
-      return BallPark.find();
+      return await BallPark.find();
+    },
+    profiles: async () => {
+      return await Profile.find().populate("visitedParks");
     },
   },
   Mutation: {
