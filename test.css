@@ -27,7 +27,7 @@ nav {
   font-family: var(--title-font);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   #navLogo h2 {
     font-size: 20px;
   }
@@ -35,4 +35,28 @@ nav {
   #navLogo img {
     width: 60px;
   }
+}
+
+/* Sign In CSS */
+
+.form-signin {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  margin: auto;
+}
+
+.form-signin img {
+  width: 300px;
+  height: auto;
+}
+
+.form-signin h1 {
+  margin-top: -25px;
+  margin-bottom: 10px;
+}
+
+#loginEmail,
+#loginPassword {
+  margin: 50px 0px;
 }
