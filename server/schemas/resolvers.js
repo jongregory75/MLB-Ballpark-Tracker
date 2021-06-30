@@ -1,16 +1,12 @@
 const { BallPark } = require("../models");
 const { Profile } = require("../models");
-const { VisitedParks } = require("../models");
 const { signToken } = require("../utils/auth");
-//TODO Build out resolvers.  This code is currently boilerplate from the MERN Miniproject codebase
+//TODO Build out resolvers.  This code is currently boilerplate from the MERN Mini project codebase
 
 const resolvers = {
   Query: {
     ballparks: async () => {
-      return BallPark.find({});
-    },
-    visitedParks: async () => {
-      return VisitedParks.find({});
+      return BallPark.find();
     },
   },
   Mutation: {
@@ -20,6 +16,36 @@ const resolvers = {
       const token = signToken(profile);
       return { token, profile };
     },
+    saveVisited: async (
+      parent,
+      { phone_number, venue_name, franchise_code },
+      context
+    ) => {
+      console.log(phone_number, venue_name, franchise_code, context.user._id);
+      if (context.user) {
+        const profile = await Profile.findOneAndUpdate(
+          { _id: context.user._id },
+          {
+            $addToSet: {
+              savedVisited: {
+                phone_number,
+                venue_name,
+                franchise_code,
+              },
+            },
+          },
+          {
+            new: true,
+            runValidators: true,
+          }
+        );
+        console.log(profile);
+        return profile;
+      } else {
+        throw new AuthenticationError("You need to be logged in!");
+      }
+    },
+
     signIn: async (parent, { email, password }) => {
       const profile = await Profile.findOne({ email });
 
@@ -38,3 +64,7 @@ const resolvers = {
   },
 };
 module.exports = resolvers;
+
+// visitedParks: async () => {
+//       return VisitedParks.find({});
+//     },

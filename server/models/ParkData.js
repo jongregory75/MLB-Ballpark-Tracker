@@ -1,6 +1,6 @@
-const { Schema, model } = require("mongoose");
+const { Schema } = require("mongoose");
 
-const ballParkSchema = new Schema({
+const parkDataSchema = new Schema({
   phone_number: {
     type: String,
   },
@@ -153,7 +153,4 @@ const ballParkSchema = new Schema({
   },
 });
 
-const BallPark = model("BallPark", ballParkSchema);
-
-// module.exports = ballParkSchema;
-module.exports = BallPark;
+module.exports = parkDataSchema;
