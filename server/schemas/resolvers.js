@@ -1,5 +1,6 @@
 const { BallPark } = require("../models");
 const { Profile } = require("../models");
+const { VisitedParks } = require("../models");
 const { signToken } = require("../utils/auth");
 //TODO Build out resolvers.  This code is currently boilerplate from the MERN Miniproject codebase
 
@@ -7,6 +8,9 @@ const resolvers = {
   Query: {
     ballparks: async () => {
       return BallPark.find({});
+    },
+    visitedParks: async () => {
+      return VisitedParks.find({});
     },
   },
   Mutation: {

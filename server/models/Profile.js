@@ -2,6 +2,7 @@ const { Schema, model } = require("mongoose");
 const bcrypt = require("bcrypt");
 
 const ballParkSchema = require("./BallPark");
+const VisitedParks = require("./VisitedParks");
 
 const profileSchema = new Schema(
   {
@@ -15,7 +16,9 @@ const profileSchema = new Schema(
       type: String,
       required: true,
     },
-    visitedParks: [ballParkSchema],
+    VisitedParks: {
+      type: Array,
+    },
   },
   // set this to use virtual below
   {
