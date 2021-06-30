@@ -74,6 +74,9 @@ const typeDefs = gql`
     spring_league_id: String
     venue_short: String
   }
+  type VisitedParks {
+    visited_parks: [BallPark]
+  }
   type Auth {
     token: ID!
     profile: Profile
