@@ -29,11 +29,8 @@ const barInfoSchema = new Schema({
   venue_add_3: {
     type: String,
   },
-  venue_rating_3: {
-    type: Number,
-  },
 });
 
-const Tech = model("Tech", techSchema);
+const BarInfo = model("BarInfo", barInfoSchema);
 
-module.exports = Tech;
+module.exports = BarInfo;

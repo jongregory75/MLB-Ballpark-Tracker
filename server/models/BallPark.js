@@ -6,14 +6,12 @@ const ballParkSchema = new Schema({
   },
   venue_name: {
     type: String,
-    required: true,
   },
   franchise_code: {
     type: String,
   },
   all_star_sw: {
-    type: Number,
-    default: 0,
+    type: String,
   },
   sport_code: {
     type: String,
@@ -49,7 +47,7 @@ const ballParkSchema = new Schema({
     type: String,
   },
   home_opener_time: {
-    type: Date,
+    type: String,
   },
   address_province: {
     type: String,
@@ -155,6 +153,6 @@ const ballParkSchema = new Schema({
   },
 });
 
-const Matchup = model("BallPark", ballParkSchema);
+const BallPark = model("BallPark", ballParkSchema);
 
 module.exports = BallPark;
