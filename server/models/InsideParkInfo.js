@@ -4,28 +4,13 @@ const insideParkSchema = new Schema({
   franchise_code: {
     type: String,
   },
-  venue_name_1: {
+  menu_1: {
     type: String,
   },
-  venue_add_1: {
+  menu_2: {
     type: String,
   },
-  venue_rating_1: {
-    type: Number,
-  },
-  venue_name_2: {
-    type: String,
-  },
-  venue_add_2: {
-    type: String,
-  },
-  venue_rating_2: {
-    type: Number,
-  },
-  venue_name_3: {
-    type: String,
-  },
-  venue_add_3: {
+  menu_3: {
     type: String,
   },
 });
