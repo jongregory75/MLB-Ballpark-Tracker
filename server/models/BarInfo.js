@@ -2,23 +2,35 @@ const { Schema, model } = require("mongoose");
 
 //TODO build out BarInfo schema based on Yelp api?
 const barInfoSchema = new Schema({
-  name: {
+  franchise_code: {
     type: String,
   },
-  address: {
+  venue_name_1: {
     type: String,
   },
-  city: {
+  venue_add_1: {
     type: String,
   },
-  state: {
+  venue_rating_1: {
+    type: Number,
+  },
+  venue_name_2: {
     type: String,
   },
-  topMenuItem: {
+  venue_add_2: {
     type: String,
   },
-  menuItemImage: {
-    type: Blob,
+  venue_rating_2: {
+    type: Number,
+  },
+  venue_name_3: {
+    type: String,
+  },
+  venue_add_3: {
+    type: String,
+  },
+  venue_rating_3: {
+    type: Number,
   },
 });
 
