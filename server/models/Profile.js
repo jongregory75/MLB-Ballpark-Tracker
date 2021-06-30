@@ -20,7 +20,6 @@ const profileSchema = new Schema(
       },
     ],
   },
-  // set this to use virtual below
   {
     toJSON: {
       virtuals: true,
@@ -37,7 +36,6 @@ profileSchema.pre("save", async function (next) {
   next();
 });
 
-// custom method to compare and validate password for logging in
 profileSchema.methods.isCorrectPassword = async function (password) {
   return bcrypt.compare(password, this.password);
 };
