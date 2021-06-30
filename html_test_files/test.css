@@ -58,5 +58,29 @@ nav {
 
 #loginEmail,
 #loginPassword {
-  margin: 50px 0px;
+  margin: 40px 0px;
+}
+
+#rememberCheckbox {
+  display: flex;
+  font-family: var(--body-font);
+  justify-content: center;
+}
+
+#rememberCheckbox input {
+  margin-top: 5px;
+  margin-right: 10px;
+  height: 16px;
+  width: 16px;
+}
+
+/* Footer CSS */
+
+footer {
+  padding: 20px;
+}
+
+footer p {
+  margin-left: 20px;
+  line-height: 50%;
 }
