@@ -155,5 +155,4 @@ const ballParkSchema = new Schema({
 
 const BallPark = model("BallPark", ballParkSchema);
 
-// module.exports = ballParkSchema;
 module.exports = BallPark;

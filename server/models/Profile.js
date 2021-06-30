@@ -1,8 +1,6 @@
 const { Schema, model } = require("mongoose");
 const bcrypt = require("bcrypt");
 
-const ballParkSchema = require("./BallPark");
-
 const profileSchema = new Schema(
   {
     email: {
@@ -15,9 +13,13 @@ const profileSchema = new Schema(
       type: String,
       required: true,
     },
-    visitedParks: [parkDataSchema],
+    visitedParks: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: "BallPark",
+      },
+    ],
   },
-  // set this to use virtual below
   {
     toJSON: {
       virtuals: true,
@@ -34,7 +36,6 @@ profileSchema.pre("save", async function (next) {
   next();
 });
 
-// custom method to compare and validate password for logging in
 profileSchema.methods.isCorrectPassword = async function (password) {
   return bcrypt.compare(password, this.password);
 };

@@ -81,7 +81,7 @@ const typeDefs = gql`
     profiles: [Profile]
     ballparks: [BallPark]
   }
-  
+
   type Mutation {
     saveVisited(
       phone_number: String
