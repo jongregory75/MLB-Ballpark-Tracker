@@ -1,0 +1,38 @@
+/* Important CSS for all pages */
+
+:root {
+  --title-font: "Roboto", sans-serif;
+  --body-font: "Open Sans", sans-serif;
+}
+
+/* Navbar CSS */
+
+nav {
+  font-family: var(--body-font);
+  height: 100px;
+}
+
+#navLogo {
+  display: flex;
+  align-items: center;
+}
+
+#navLogo img {
+  width: 100px;
+  height: auto;
+}
+
+#navLogo h2 {
+  margin-left: -10px;
+  font-family: var(--title-font);
+}
+
+@media screen and (max-width: 600px) {
+  #navLogo h2 {
+    font-size: 20px;
+  }
+
+  #navLogo img {
+    width: 60px;
+  }
+}
