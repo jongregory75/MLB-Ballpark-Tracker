@@ -125,3 +125,22 @@ main {
 #landingText h2 {
   padding: 10px 0;
 }
+
+/* Dashboard CSS */
+
+#dashboardHeader {
+  margin-top: 100px;
+}
+
+#dashboard {
+  margin-top: 100px;
+}
+
+#mlbMap {
+  width: 1200px;
+  height: auto;
+}
+
+#visitArea {
+  width: 400px;
+}
