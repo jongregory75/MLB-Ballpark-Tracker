@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useLocation, useHistory } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 const 
-import { QUERY_ALW } from "../src/utils/queries";
+import { QUERY_ALW } from "../utils/queries";
 
 const alwList = () => {
 
