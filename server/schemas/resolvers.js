@@ -19,29 +19,20 @@ const resolvers = {
       const token = signToken(profile);
       return { token, profile };
     },
-    saveVisited: async (
-      parent,
-      { phone_number, venue_name, franchise_code },
-      context
-    ) => {
-      console.log(phone_number, venue_name, franchise_code, context.user._id);
+    saveVisited: async (parent, { parkId }, context) => {
       if (context.user) {
         const profile = await Profile.findOneAndUpdate(
           { _id: context.user._id },
           {
             $addToSet: {
-              savedVisited: {
-                phone_number,
-                venue_name,
-                franchise_code,
-              },
+              visitedParks: parkId,
             },
           },
           {
             new: true,
             runValidators: true,
           }
-        );
+        ).populate("visitedParks");
         console.log(profile);
         return profile;
       } else {
@@ -71,3 +62,29 @@ module.exports = resolvers;
 // visitedParks: async () => {
 //       return VisitedParks.find({});
 //     },
+
+// savedVisited: {
+//               phone_number,
+//               venue_name,
+//               franchise_code,
+//               city,
+//               name_display_full,
+//               address_province,
+//               name_abbrev,
+//               league,
+//               base_url,
+//               address_zip,
+//               address_line1,
+//               address_line2,
+//               address_line3,
+//               division_abbrev,
+//               state,
+//               website_url,
+//               first_year_of_play,
+//               name_display_long,
+//               store_url,
+//               address_state,
+//               division_full,
+//               address,
+//               venue_short,
+//             },
