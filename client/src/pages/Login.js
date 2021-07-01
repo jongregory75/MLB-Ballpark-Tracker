@@ -1,10 +1,11 @@
 import React from "react";
+import logo from "../assets/logo.png";
 
 const Login = () => {
   return (
     <main className="form-signin text-center">
       <form action="POST">
-        <img className="mb-4" src="../client/public/logo.png" alt="Our logo" />
+        <img className="mb-4" src={logo} alt="Our logo" />
         <h1 className="h3 mb-3 fw-normal">Login Here</h1>
         <div className="form-floating" id="loginEmail">
           <input

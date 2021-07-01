@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../../assets/logo.png";
 
 import { Link } from "react-router-dom";
 
@@ -10,10 +11,7 @@ const Header = () => {
           <div className="container-fluid">
             <a className="navbar-brand" href="/">
               <div id="navLogo">
-                <img
-                  src="../client/public/logo.png"
-                  alt="The MLB Park Tracker logo"
-                />
+                <img src={logo} alt="The MLB Park Tracker logo" />
                 <h2>MLB Park Tracker</h2>
               </div>
             </a>
