@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -34,9 +35,9 @@ const Login = () => {
         <button className="w-100 btn btn-lg btn-primary" type="submit">
           Login
         </button>
-        <a href="/user/create">
+        <Link to="/createUser">
           Need to make an account? Click here to create one!
-        </a>
+        </Link>
       </form>
     </main>
   );
