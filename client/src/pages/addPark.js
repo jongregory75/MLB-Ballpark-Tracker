@@ -1,10 +1,8 @@
 import React from "react";
-import logo from "../assets/logo.png";
-import { Link } from "react-router-dom";
 
 const AddPark = () => {
   return (
-    <main>
+    <main class="addVisitArea">
       <div className="col-sm-3 col-md-6 col-lg-9 m-auto">
         <div className="card mx-auto mt-10 bg-light">
           <div className="card-body text-center">

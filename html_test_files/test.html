@@ -32,7 +32,7 @@
             <a class="navbar-brand" href="/">
               <div id="navLogo">
                 <img
-                  src="../client/public/logo.png"
+                  src="../client/src/assets/logo.png"
                   alt="The MLB Park Tracker logo"
                 />
                 <h2>MLB Park Tracker</h2>
@@ -75,44 +75,36 @@
       </div>
     </header>
     <!-- End Nav area -->
-    <!-- Login Area -->
-    <main class="form-signin text-center">
-      <form action="POST">
-        <img class="mb-4" src="../client/public/logo.png" alt="Our logo" />
-        <h1 class="h3 mb-3 fw-normal">Login Here</h1>
-        <div class="form-floating" id="loginEmail">
-          <input
-            type="email"
-            class="form-control"
-            id="floatingEmail"
-            placeholder="name@example.com"
-          />
-          <label for="floatingEmail">Email address</label>
-        </div>
-        <div class="form-floating" id="loginPassword">
-          <input
-            type="password"
-            class="form-control"
-            id="floatingPassword"
-            placeholder="Password"
-          />
-          <label for="floatingPassword">Password</label>
-        </div>
-        <div class="checkbox mb-3">
-          <label id="rememberCheckbox">
-            <input type="checkbox" value="remember-me" />
-            <p>Remember Me</p>
-          </label>
-        </div>
-        <button class="w-100 btn btn-lg btn-primary" type="submit">
-          Login
-        </button>
-        <a href="/user/create"
-          >Need to make an account? Click here to create one!</a
+    <!-- Start Home Page -->
+    <main class="container-fluid">
+      <div class="d-flex" id="splashZone">
+        <img src="../client/src/assets/logo.png" alt="Our logo" />
+        <h1>MLB Park Tracker</h1>
+        <img src="../client/src/assets/logo.png" alt="Our logo" />
+      </div>
+      <div id="landingText" class="d-flex flex-column">
+        <h2>Welcome</h2>
+        <p>
+          To your one stop shop for all things MLB stadiums. Find out what
+          people think of your home team's home and explore rival stadiums and
+          decide which away games are worth going to. Check out highly
+          recommended bars and restaurants for your pregame and the best
+          in-stadium vendors.
+        </p>
+        <p>
+          Create an account and leave reviews, interact with your peers, and
+          keep track of all the stadiums you have been to!
+        </p>
+        <p>
+          Hit the button below to create an account and get started on your MLB
+          superfan journey!
+        </p>
+        <a href="/createUser"
+          ><button class="btn btn-dark">Get Started</button></a
         >
-      </form>
+      </div>
     </main>
-    <!-- End Login Area -->
+    <!-- End Home Page -->
     <!-- Footer area -->
     <footer class="fixed-bottom bg-light">
       <p>©2021 MLB Park Tracker</p>

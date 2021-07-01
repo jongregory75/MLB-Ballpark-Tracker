@@ -5,6 +5,10 @@
   --body-font: "Open Sans", sans-serif;
 }
 
+html {
+  box-sizing: border-box;
+}
+
 /* Navbar CSS */
 
 nav {
@@ -57,7 +61,9 @@ nav {
 }
 
 #loginEmail,
-#loginPassword {
+#loginPassword,
+#createEmail,
+#createPassword {
   margin: 40px 0px;
 }
 
@@ -83,4 +89,45 @@ footer {
 footer p {
   margin-left: 20px;
   line-height: 50%;
+}
+
+/* Home Page CSS */
+
+main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#splashZone {
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+#splashZone img {
+  width: 250px;
+  height: auto;
+  margin: 0 100px;
+}
+
+#splashBG {
+  width: 1000px;
+  height: auto;
+}
+
+#landingText {
+  width: 1000px;
+  margin: auto;
+}
+
+#landingText h2 {
+  padding: 10px 0;
+}
+
+/* Add visit CSS */
+
+.addVisitArea {
+  margin-top: 100px;
 }
