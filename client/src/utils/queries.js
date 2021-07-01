@@ -1,22 +1,78 @@
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 
-export const QUERY_TECH = gql`
-  query tech {
-    tech {
-      _id
-      name
-    }
-  }
+export const QUERY_NLW = gql`
+query nlwList($division_abbrev: NLW) {
+  ballparks ($division_abbrev: NLW){
+name_display_long
+venue_name
+address_line1
+address_city
+address_state
+address_zip
+phone_number
+website_url
+division_abbrev
+}
+}
 `;
 
-export const QUERY_MATCHUPS = gql`
-  query matchups($_id: String) {
-    matchups(_id: $_id) {
-      _id
-      tech1
-      tech2
-      tech1_votes
-      tech2_votes
-    }
-  }
+export const QUERY_NLE = gql`
+query nlwList($division_abbrev: NLE) {
+  ballparks ($division_abbrev: NLE){
+name_display_long
+venue_name
+address_line1
+address_city
+address_state
+address_zip
+phone_number
+website_url
+division_abbrev
+}
+}
+`;
+
+export const QUERY_ALW = gql`
+query nlwList($division_abbrev: NLW) {
+  ballparks ($division_abbrev: NLW){
+name_display_long
+venue_name
+address_line1
+address_city
+address_state
+address_zip
+phone_number
+website_url
+division_abbrev
+}
+}
+`;
+
+export const QUERY_ALC = gql`
+query ballparks {
+   name_display_long
+   venue_name
+   address_line1
+   address_city
+   address_state
+   address_zip
+   phone_number
+   website_url
+   division_abbrev
+   }
+}
+`;
+export const QUERY_ALE = gql`
+query ballparks {
+   name_display_long
+   venue_name
+   address_line1
+   address_city
+   address_state
+   address_zip
+   phone_number
+   website_url
+   division_abbrev
+   }
+}
 `;

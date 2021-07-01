@@ -80,6 +80,12 @@ const typeDefs = gql`
   type Query {
     profiles: [Profile]
     ballparks: [BallPark]
+    queryNLW(division_abbrev: division_abbrev): [BallPark]
+    queryNLE(division_abbrev: division_abbrev): [BallPark]
+    queryNLC(division_abbrev: division_abbrev): [BallPark]
+    queryALW(division_abbrev: division_abbrev): [BallPark]
+    queryALC(division_abbrev: division_abbrev): [BallPark]
+    queryALE(division_abbrev: division_abbrev): [BallPark]
   }
 
   type Mutation {
