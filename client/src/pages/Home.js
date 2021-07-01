@@ -9,7 +9,7 @@ const Home = () => {
         <h1>MLB Park Tracker</h1>
         <img src={logo} alt="Our logo" />
       </div>
-      <div id="landingText" class="d-flex flex-column">
+      <div id="landingText" className="d-flex flex-column">
         <h2>Welcome</h2>
         <p>
           To your one stop shop for all things MLB stadiums. Find out what
