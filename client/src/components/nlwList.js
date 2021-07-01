@@ -23,6 +23,8 @@ const nlwList = () => {
           <div>NL West: </div>
           <div className="col-12 col-md-10 mb-5">
             {data.map((ballParks) => (
+
+
             <div key={_id} className="card mb-3">
               <div className="card-header">
                 <h4>Name:{ballParks.name_display_long}</h4>

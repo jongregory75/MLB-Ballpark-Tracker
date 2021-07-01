@@ -4,7 +4,7 @@ import { useQuery } from "@apollo/client";
 const 
 import { QUERY_NLE } from "../utils/queries";
 
-const aleList = () => {
+const nleList = () => {
 
   const {division_abbrev} = useParams();
 

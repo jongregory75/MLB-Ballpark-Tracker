@@ -11,7 +11,22 @@ const resolvers = {
       return await Profile.find().populate("visitedParks");
     },
     queryNLW: async (parent, { division_abbrev }) => {
-      return await BallPark.find().populate("ballparks");
+      return await BallPark.find({ division_abbrev }).populate("ballparks");
+    },
+    queryNLE: async (parent, { division_abbrev }) => {
+      return await BallPark.find({ division_abbrev }).populate("ballparks");
+    },
+    queryNLC: async (parent, { division_abbrev }) => {
+      return await BallPark.find({ division_abbrev }).populate("ballparks");
+    },
+    queryALW: async (parent, { division_abbrev }) => {
+      return await BallPark.find({ division_abbrev }).populate("ballparks");
+    },
+    queryALC: async (parent, { division_abbrev }) => {
+      return await BallPark.find({ division_abbrev }).populate("ballparks");
+    },
+    queryALE: async (parent, { division_abbrev }) => {
+      return await BallPark.find({ division_abbrev }).populate("ballparks");
     },
   },
   Mutation: {

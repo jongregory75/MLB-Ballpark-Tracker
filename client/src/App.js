@@ -9,6 +9,7 @@ import CreateUser from "./pages/CreateUser";
 import Login from "./pages/Login";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import ParksPage from "./pages/ParksPage";
 
 const client = new ApolloClient({
   uri: "/graphql",
@@ -29,6 +30,7 @@ function App() {
 
             <Footer />
           </div>
+          <Route path="/parks" component={ParksPage} />
         </Switch>
       </Router>
     </ApolloProvider>
