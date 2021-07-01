@@ -1,10 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
+import logo from "../assets/logo.png";
 
 const CreateUser = () => {
   return (
     <main className="form-signin text-center">
       <form action="POST">
-        <img className="mb-4" src="../client/public/logo.png" alt="Our logo" />
+        <img className="mb-4" src={logo} alt="Our logo" />
         <h1 className="h3 mb-3 fw-normal">New User</h1>
         <div className="form-floating" id="createEmail">
           <input
@@ -27,7 +30,7 @@ const CreateUser = () => {
         <button className="w-100 btn btn-lg btn-primary" type="submit">
           Create User
         </button>
-        <a href="/user/create">Already have an account? Click here to Login!</a>
+        <Link to="/login">Already have an account? Click here to Login!</Link>
       </form>
     </main>
   );
