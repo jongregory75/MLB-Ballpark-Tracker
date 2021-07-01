@@ -9,7 +9,7 @@ import CreateUser from "./pages/CreateUser";
 import Login from "./pages/Login";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import AddPark from "./component/AddPark";
+import AddPark from "./pages/addPark";
 const client = new ApolloClient({
   uri: "/graphql",
   cache: new InMemoryCache(),
