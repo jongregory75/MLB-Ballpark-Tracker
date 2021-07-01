@@ -1,8 +1,8 @@
 import { gql } from "@apollo/client";
 
 export const QUERY_NLW = gql`
-query nlwList($division_abbrev: NLW) {
-  ballparks ($division_abbrev: NLW){
+query queryNLW($division_abbrev: ID) {
+  ballparks ($ballparks : "NLW"){
 name_display_long
 venue_name
 address_line1
