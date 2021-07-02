@@ -1,7 +1,6 @@
 const { BallPark } = require("../models");
 const { Profile } = require("../models");
 const { signToken } = require("../utils/auth");
-//TODO Build out resolvers.  This code is currently boilerplate from the MERN Mini project codebase
 
 const resolvers = {
   Query: {
@@ -10,6 +9,10 @@ const resolvers = {
     },
     profiles: async () => {
       return await Profile.find().populate("visitedParks");
+    },
+    division: async (parent, { division_abbrev }) => {
+      console.log("INSIDE SERVER RESOLVERS");
+      return await BallPark.find({ division_abbrev }).populate("ballparks");
     },
   },
   Mutation: {
