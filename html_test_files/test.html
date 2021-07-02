@@ -75,36 +75,36 @@
       </div>
     </header>
     <!-- End Nav area -->
-    <!-- Start Home Page -->
-    <main class="container-fluid">
-      <div class="d-flex" id="splashZone">
-        <img src="../client/src/assets/logo.png" alt="Our logo" />
-        <h1>MLB Park Tracker</h1>
-        <img src="../client/src/assets/logo.png" alt="Our logo" />
+    <!-- Start Dashboard Area -->
+    <main>
+      <h1 class="text-center" id="dashboardHeader">Your Dashboard</h1>
+      <div
+        class="d-flex flex-row flex-wrap justify-content-around"
+        id="dashboard"
+      >
+        <img
+          src="../client/src/assets/mlb-maps.png"
+          alt="A map with all of the ballparks placed on it"
+          id="mlbMap"
+        />
+        <div id="visitArea">
+          <a href="/addPark"
+            ><button class="btn btn-dark">Add a Visit</button></a
+          >
+          <p>Add a review to a park that you have visited.</p>
+        </div>
       </div>
-      <div id="landingText" class="d-flex flex-column">
-        <h2>Welcome</h2>
-        <p>
-          To your one stop shop for all things MLB stadiums. Find out what
-          people think of your home team's home and explore rival stadiums and
-          decide which away games are worth going to. Check out highly
-          recommended bars and restaurants for your pregame and the best
-          in-stadium vendors.
-        </p>
-        <p>
-          Create an account and leave reviews, interact with your peers, and
-          keep track of all the stadiums you have been to!
-        </p>
-        <p>
-          Hit the button below to create an account and get started on your MLB
-          superfan journey!
-        </p>
-        <a href="/createUser"
-          ><button class="btn btn-dark">Get Started</button></a
-        >
+      <div class="container-fluid justify-content-center" id="visitedArea">
+        <h2>Your Visited Parks</h2>
+        <ul>
+          <li>Park Name</li>
+          <li>Park Name</li>
+          <li>Park Name</li>
+          <li>Park Name</li>
+        </ul>
       </div>
     </main>
-    <!-- End Home Page -->
+    <!-- End Dashboard Area -->
     <!-- Footer area -->
     <footer class="fixed-bottom bg-light">
       <p>©2021 MLB Park Tracker</p>

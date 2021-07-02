@@ -1,30 +1,63 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
+import { useMutation } from "@apollo/client";
+import { SIGN_IN } from "../utils/mutations";
+import Auth from "../utils/auth";
 
-const Login = () => {
+const Login = (props) => {
+  console.log(props);
+  const [formState, setFormState] = useState({ email: "", password: "" });
+  const [login, { error, data }] = useMutation(SIGN_IN);
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    console.log(event);
+    setFormState({
+      ...formState,
+      [name]: value,
+    });
+  };
+
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      const { data } = await login({
+        variables: { ...formState },
+      });
+
+      Auth.login(data.login.token);
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
   return (
     <main className="form-signin text-center">
-      <form action="POST">
+      <form onSubmit={handleFormSubmit}>
         <img className="mb-4" src={logo} alt="Our logo" />
         <h1 className="h3 mb-3 fw-normal">Login Here</h1>
         <div className="form-floating" id="loginEmail">
           <input
             type="email"
+            value={formState.email}
             className="form-control"
             id="floatingEmail"
             placeholder="name@example.com"
+            onChange={handleChange}
           />
-          <label for="floatingEmail">Email address</label>
+          <label htmlFor="floatingEmail">Email address</label>
         </div>
         <div className="form-floating" id="loginPassword">
           <input
             type="password"
+            value={formState.password}
             className="form-control"
             id="floatingPassword"
             placeholder="Password"
+            onChange={handleChange}
           />
-          <label for="floatingPassword">Password</label>
+          <label htmlFor="floatingPassword">Password</label>
         </div>
         <div className="checkbox mb-3">
           <label id="rememberCheckbox">
