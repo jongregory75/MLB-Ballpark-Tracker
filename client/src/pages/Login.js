@@ -6,13 +6,11 @@ import { SIGN_IN } from "../utils/mutations";
 import Auth from "../utils/auth";
 
 const Login = (props) => {
-  console.log(props);
   const [formState, setFormState] = useState({ email: "", password: "" });
   const [login, { error, data }] = useMutation(SIGN_IN);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    console.log(event);
     setFormState({
       ...formState,
       [name]: value,
@@ -26,7 +24,8 @@ const Login = (props) => {
         variables: { ...formState },
       });
 
-      Auth.login(data.login.token);
+      console.log(data);
+      Auth.login(data.signIn.token);
     } catch (e) {
       console.log(e);
     }
@@ -40,7 +39,8 @@ const Login = (props) => {
         <div className="form-floating" id="loginEmail">
           <input
             type="email"
-            value={formState.email}
+            name="email"
+            // value={formState.email}
             className="form-control"
             id="floatingEmail"
             placeholder="name@example.com"
@@ -51,7 +51,8 @@ const Login = (props) => {
         <div className="form-floating" id="loginPassword">
           <input
             type="password"
-            value={formState.password}
+            name="password"
+            // value={formState.password}
             className="form-control"
             id="floatingPassword"
             placeholder="Password"

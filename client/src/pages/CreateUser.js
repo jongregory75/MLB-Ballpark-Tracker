@@ -18,11 +18,10 @@ function Signup(props) {
       variables: {
         email: formState.email,
         password: formState.password,
-        firstName: formState.firstName,
-        lastName: formState.lastName,
       },
     });
-    const token = mutationResponse.data.addUser.token;
+    console.log(mutationResponse.data);
+    const token = mutationResponse.data.signUp.token;
     Auth.login(token);
   };
 
@@ -42,24 +41,26 @@ function Signup(props) {
         <div className="form-floating" id="createEmail">
           <input
             type="email"
+            name="email"
             value={formState.email}
             className="form-control"
             id="floatingEmail"
             placeholder="name@example.com"
             onChange={handleChange}
           />
-          <label for="floatingEmail">Email address</label>
+          <label htmlFor="floatingEmail">Email address</label>
         </div>
         <div className="form-floating" id="createPassword">
           <input
             type="password"
+            name="password"
             value={formState.password}
             className="form-control"
             id="floatingPassword"
             placeholder="Password"
             onChange={handleChange}
           />
-          <label for="floatingPassword">Password</label>
+          <label htmlFor="floatingPassword">Password</label>
         </div>
         <button className="w-100 btn btn-lg btn-primary" type="submit">
           Create User
