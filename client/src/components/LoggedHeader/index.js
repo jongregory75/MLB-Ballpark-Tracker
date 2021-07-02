@@ -2,7 +2,6 @@ import React from "react";
 import logo from "../../assets/logo.png";
 
 import { Link } from "react-router-dom";
-import Dashboard from "../../pages/Dashboard";
 
 const Header = () => {
   return (

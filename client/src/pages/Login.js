@@ -1,30 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
+// const bcrypt = require('bcrypt')
 
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  function validateForm() {
+    return email.length > 0 && password.length > 0;
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+  }
+
   return (
     <main className="form-signin text-center">
-      <form action="POST">
+      <form id="loginForm">
         <img className="mb-4" src={logo} alt="Our logo" />
         <h1 className="h3 mb-3 fw-normal">Login Here</h1>
         <div className="form-floating" id="loginEmail">
           <input
             type="email"
+            value={email}
             className="form-control"
             id="floatingEmail"
             placeholder="name@example.com"
+            onChange={(e) => setEmail(e.target.value)}
           />
-          <label for="floatingEmail">Email address</label>
+          <label htmlFor="floatingEmail">Email address</label>
         </div>
         <div className="form-floating" id="loginPassword">
           <input
             type="password"
+            value={password}
             className="form-control"
             id="floatingPassword"
             placeholder="Password"
+            onChange={(e) => setPassword(e.target.value)}
           />
-          <label for="floatingPassword">Password</label>
+          <label htmlFor="floatingPassword">Password</label>
         </div>
         <div className="checkbox mb-3">
           <label id="rememberCheckbox">
