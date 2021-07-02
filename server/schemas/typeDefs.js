@@ -82,13 +82,9 @@ const typeDefs = gql`
   type Query {
     profiles: [Profile]
     ballparks: [BallPark]
-    queryNLW(division_abbrev: String): [BallPark]
-    queryNLE(division_abbrev: String): [BallPark]
-    queryNLC(division_abbrev: String): [BallPark]
-    queryALW(division_abbrev: String): [BallPark]
-    queryALC(division_abbrev: String): [BallPark]
-    queryALE(division_abbrev: String): [BallPark]
+    division(division_abbrev: String!): [BallPark]
   }
+
   type Mutation {
     saveVisited(parkId: ID!): Profile
     signUp(email: String!, password: String!): Auth

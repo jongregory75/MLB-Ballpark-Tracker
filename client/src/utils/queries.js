@@ -1,8 +1,8 @@
 import { gql } from "@apollo/client";
 
-export const QUERY_NLW = gql`
-  query queryNLW($division_abbrev: String) {
-    ballparks {
+export const DIVISION = gql`
+  query division($division_abbrev: String!) {
+    division(division_abbrev: $division_abbrev) {
       name_display_long
       venue_name
       address_line1
@@ -14,65 +14,4 @@ export const QUERY_NLW = gql`
       division_abbrev
     }
   }
-`;
-
-export const QUERY_NLE = gql`
-  query queryNLW($division_abbrev: String) {
-    queryNLW(division_abbrev: "NLE") {
-      name_display_long
-      venue_name
-      address_line1
-      address_city
-      address_state
-      address_zip
-      phone_number
-      website_url
-      division_abbrev
-    }
-  }
-`;
-
-export const QUERY_ALW = gql`
-query nlwList($division_abbrev: NLW) {
-  ballparks ($division_abbrev: NLW){
-name_display_long
-venue_name
-address_line1
-address_city
-address_state
-address_zip
-phone_number
-website_url
-division_abbrev
-}
-}
-`;
-
-export const QUERY_ALC = gql`
-query ballparks {
-   name_display_long
-   venue_name
-   address_line1
-   address_city
-   address_state
-   address_zip
-   phone_number
-   website_url
-   division_abbrev
-   }
-}
-`;
-export const QUERY_ALE = gql`
-query ballparks {
-   name_display_long
-   venue_name
-   address_line1
-   address_city
-   address_state
-   address_zip
-   phone_number
-   website_url
-   division_abbrev
-   }
-}
 `;

@@ -10,22 +10,8 @@ const resolvers = {
     profiles: async () => {
       return await Profile.find().populate("visitedParks");
     },
-    queryNLW: async (parent, { division_abbrev }) => {
-      return await BallPark.find({ division_abbrev }).populate("ballparks");
-    },
-    queryNLE: async (parent, { division_abbrev }) => {
-      return await BallPark.find({ division_abbrev }).populate("ballparks");
-    },
-    queryNLC: async (parent, { division_abbrev }) => {
-      return await BallPark.find({ division_abbrev }).populate("ballparks");
-    },
-    queryALW: async (parent, { division_abbrev }) => {
-      return await BallPark.find({ division_abbrev }).populate("ballparks");
-    },
-    queryALC: async (parent, { division_abbrev }) => {
-      return await BallPark.find({ division_abbrev }).populate("ballparks");
-    },
-    queryALE: async (parent, { division_abbrev }) => {
+    division: async (parent, { division_abbrev }) => {
+      console.log("INSIDE SERVER RESOLVERS");
       return await BallPark.find({ division_abbrev }).populate("ballparks");
     },
   },
