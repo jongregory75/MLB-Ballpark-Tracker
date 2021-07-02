@@ -13,14 +13,18 @@ import Footer from "./components/Footer";
 import AddPark from "./pages/addPark";
 import Dashboard from "./pages/Dashboard";
 import ParksPage from "./pages/ParksPage";
+<<<<<<< HEAD
 import SinglePark from "./pages/SinglePark";
+=======
+
+>>>>>>> main
 const client = new ApolloClient({
   uri: "/graphql",
   cache: new InMemoryCache(),
 });
 
 function App() {
-  const [token, setToken] = useState();
+  const token = localStorage.getItem("id_token");
 
   if (!token) {
     return (
@@ -32,8 +36,6 @@ function App() {
               <Route exact path="/" component={Home} />
               <Route path="/login" component={Login} />
               <Route path="/createUser" component={Signup} />
-              <Route exact path="/addPark" component={AddPark} />
-              <Route path="/dashboard" component={Dashboard} />
               <Route path="/parks" component={ParksPage} />
               <Route path="/franchise" component={SinglePark} />
             </Switch>
@@ -49,15 +51,16 @@ function App() {
           <LoggedHeader />
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/login" component={Login} />
             <Route path="/createUser" component={Signup} />
             <Route exact path="/addPark" component={AddPark} />
             <Route path="/dashboard" component={Dashboard} />
           </Switch>
-        </Router>
-      </ApolloProvider>
-    );
-  }
+
+          {/* <Footer /> */}
+        </div>
+      </Router>
+    </ApolloProvider>
+  );
 }
 
 export default App;
