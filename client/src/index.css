@@ -131,3 +131,37 @@ main {
 .addVisitArea {
   margin-top: 100px;
 }
+
+/* Dashboard CSS */
+
+#dashboardHeader {
+  margin-top: 100px;
+}
+
+#dashboard {
+  margin-top: 100px;
+}
+
+#mlbMap {
+  width: 1200px;
+  height: auto;
+}
+
+#visitArea {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#visitedArea {
+  width: 700px;
+  margin-top: 50px;
+  justify-content: center;
+  text-align: center;
+}
+
+#visitedArea ul {
+  list-style-type: none;
+}
