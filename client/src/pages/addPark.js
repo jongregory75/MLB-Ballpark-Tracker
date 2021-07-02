@@ -2,33 +2,42 @@ import React, { useState } from "react";
 import { useMutation, useQuery } from "@apollo/client";
 import { SAVE_VISITED } from "../utils/mutations";
 
+// const [addNewPark, { error }] = useMutation(SAVE_VISITED);
+
 const handleSubmit = (event) => {
   console.log("pushed");
   let parkID = document.getElementById("venue").value;
   let preComment = document.getElementById("pregameText").value;
   let bpComment = document.getElementById("ballparkText").value;
-  let finalPre;
-  let finalBp;
+  // let finalPre;
+  // let finalBp;
 
-  let preRating = document.getElementsByName("btnradio");
-  for (let i = 0; i < preRating.length; i++) {
-    if (preRating[i].checked) {
-      finalPre = preRating[i].value;
-    }
-  }
+  // let preRating = document.getElementsByName("btnradio");
+  // for (let i = 0; i < preRating.length; i++) {
+  //   if (preRating[i].checked) {
+  //     finalPre = preRating[i].value;
+  //   }
+  // }
 
-  let bpRating = document.getElementsByName("btnradio1");
-  for (let i = 0; i < bpRating.length; i++) {
-    if (bpRating[i].checked) {
-      finalBp = bpRating[i].value;
-    }
-  }
-  console.log(parkID, preComment, bpComment, finalPre, finalBp);
+  // let bpRating = document.getElementsByName("btnradio1");
+  // for (let i = 0; i < bpRating.length; i++) {
+  //   if (bpRating[i].checked) {
+  //     finalBp = bpRating[i].value;
+  //   }
+  // }
+
+  //  const idToken = localStorage.getItem("id_token")
+
+  //   try {
+  //     const { data } = await addNewPark({
+  //       idToken:idToken
+  //       parkID:parkID
+  //     })
 };
 
 const AddPark = () => {
   return (
-    <main class="addVisitArea">
+    <main className="addVisitArea">
       <div className="col-sm-3 col-md-6 col-lg-9 m-auto">
         <div className="card mx-auto bg-light">
           <div className="card-body text-center">
@@ -146,10 +155,10 @@ const AddPark = () => {
                   className="btn-check"
                   name="btnradio"
                   id="PG1"
-                  autocomplete="off"
+                  autoComplete="off"
                   value="1"
                 />
-                <label className="btn btn-outline-primary" for="PG1">
+                <label className="btn btn-outline-primary" htmlFor="PG1">
                   1
                 </label>
 
@@ -158,10 +167,10 @@ const AddPark = () => {
                   className="btn-check"
                   name="btnradio"
                   id="PG2"
-                  autocomplete="off"
+                  autoComplete="off"
                   value="2"
                 />
-                <label class="btn btn-outline-primary" for="PG2">
+                <label className="btn btn-outline-primary" htmlFor="PG2">
                   2
                 </label>
 
@@ -170,10 +179,10 @@ const AddPark = () => {
                   className="btn-check"
                   name="btnradio"
                   id="PG3"
-                  autocomplete="off"
+                  autoComplete="off"
                   value="3"
                 />
-                <label class="btn btn-outline-primary" for="PG3">
+                <label className="btn btn-outline-primary" htmlFor="PG3">
                   3
                 </label>
                 <input
@@ -181,10 +190,10 @@ const AddPark = () => {
                   className="btn-check"
                   name="btnradio"
                   id="PG4"
-                  autocomplete="off"
+                  autoComplete="off"
                   value="4"
                 />
-                <label class="btn btn-outline-primary" for="PG4">
+                <label className="btn btn-outline-primary" htmlFor="PG4">
                   4
                 </label>
                 <input
@@ -192,10 +201,10 @@ const AddPark = () => {
                   className="btn-check"
                   name="btnradio"
                   id="PG5"
-                  autocomplete="off"
+                  autoComplete="off"
                   value="5"
                 />
-                <label className="btn btn-outline-primary" for="PG5">
+                <label className="btn btn-outline-primary" htmlFor="PG5">
                   5
                 </label>
               </div>
@@ -212,10 +221,10 @@ const AddPark = () => {
                   className="btn-check"
                   name="btnradio1"
                   id="BP1"
-                  autocomplete="off"
+                  autoComplete="off"
                   value="1"
                 />
-                <label className="btn btn-outline-primary" for="BP1">
+                <label className="btn btn-outline-primary" htmlFor="BP1">
                   1
                 </label>
 
@@ -224,10 +233,10 @@ const AddPark = () => {
                   className="btn-check"
                   name="btnradio1"
                   id="BP2"
-                  autocomplete="off"
+                  autoComplete="off"
                   value="2"
                 />
-                <label className="btn btn-outline-primary" for="BP2">
+                <label className="btn btn-outline-primary" htmlFor="BP2">
                   2
                 </label>
 
@@ -236,10 +245,10 @@ const AddPark = () => {
                   className="btn-check"
                   name="btnradio1"
                   id="BP3"
-                  autocomplete="off"
+                  autoComplete="off"
                   value="3"
                 />
-                <label className="btn btn-outline-primary" for="BP3">
+                <label className="btn btn-outline-primary" htmlFor="BP3">
                   3
                 </label>
                 <input
@@ -247,10 +256,10 @@ const AddPark = () => {
                   className="btn-check"
                   name="btnradio1"
                   id="BP4"
-                  autocomplete="off"
+                  autoComplete="off"
                   value="4"
                 />
-                <label className="btn btn-outline-primary" for="BP4">
+                <label className="btn btn-outline-primary" htmlFor="BP4">
                   4
                 </label>
                 <input
@@ -258,10 +267,10 @@ const AddPark = () => {
                   className="btn-check"
                   name="btnradio1"
                   id="BP5"
-                  autocomplete="off"
+                  autoComplete="off"
                   value="5"
                 />
-                <label className="btn btn-outline-primary" for="BP5">
+                <label className="btn btn-outline-primary" htmlFor="BP5">
                   5
                 </label>
               </div>
@@ -273,7 +282,7 @@ const AddPark = () => {
                 placeholder="Leave a comment here"
                 id="pregameText"
               ></textarea>
-              <label for="pregameText">
+              <label htmlFor="pregameText">
                 How was your experience outside the ballpark?
                 <span className="font-size-small">
                   (bars/food/non-stadium fare)
@@ -286,7 +295,7 @@ const AddPark = () => {
                 placeholder="Leave a comment here"
                 id="ballparkText"
               ></textarea>
-              <label for="ballparkText">
+              <label htmlFor="ballparkText">
                 How was your experience inside the ballpark?
                 <span className="font-size-small">(snacks/prices/vendors)</span>
               </label>
@@ -295,7 +304,7 @@ const AddPark = () => {
               type="button"
               className="btn btn-primary btn-lg mt-5"
               id="submitButton"
-              onclick={handleSubmit}
+              // onClick={handleSubmit}
             >
               Submit
             </button>
