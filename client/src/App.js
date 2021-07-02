@@ -29,7 +29,7 @@ function App() {
             <Route path="/addPark" component={AddPark} />
             <Route path="/parks" component={ParksPage} />
           </Switch>
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </Router>
     </ApolloProvider>
