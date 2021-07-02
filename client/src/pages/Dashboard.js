@@ -1,5 +1,8 @@
 import React from "react";
 
+import mlbMap from "../assets/mlb-maps.png";
+import { Link } from "react-router-dom";
+
 const Dashboard = () => {
   return (
     <main>
@@ -11,7 +14,7 @@ const Dashboard = () => {
         id="dashboard"
       >
         <img
-          src="../client/src/assets/mlb-maps.png"
+          src={mlbMap}
           alt="A map with all of the ballparks placed on it"
           id="mlbMap"
         />
@@ -34,3 +37,5 @@ const Dashboard = () => {
     </main>
   );
 };
+
+export default Dashboard;
