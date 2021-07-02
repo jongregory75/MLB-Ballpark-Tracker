@@ -21,6 +21,7 @@ const resolvers = {
     },
     saveVisited: async (parent, { parkId }, context) => {
       if (context.user) {
+        console.log(parkId)
         const profile = await Profile.findOneAndUpdate(
           { _id: context.user._id },
           {
