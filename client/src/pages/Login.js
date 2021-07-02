@@ -6,6 +6,7 @@ import { SIGN_IN } from "../utils/mutations";
 import Auth from "../utils/auth";
 
 const Login = (props) => {
+  console.log(props);
   const [formState, setFormState] = useState({ email: "", password: "" });
   const [login, { error, data }] = useMutation(SIGN_IN);
 
@@ -63,11 +64,7 @@ const Login = (props) => {
             <p>Remember Me</p>
           </label>
         </div>
-        <button
-          className="w-100 btn btn-lg btn-primary"
-          type="submit"
-          disabled={!validateForm()}
-        >
+        <button className="w-100 btn btn-lg btn-primary" type="submit">
           Login
         </button>
         <Link to="/createUser">
