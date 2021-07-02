@@ -12,8 +12,22 @@ export const SAVE_VISITED = gql`
   }
 `;
 export const SIGN_UP = gql`
- signUp(email: String!, password: String!): Auth
+  mutation signUp($email: String!, $password: String!) {
+    signUp(email: $email, password: $password) {
+      token
+      profile {
+        email
+      }
+    }
+  }
 `;
 export const SIGN_IN = gql`
- signIn(email: String!, password: String!): Auth
+  mutation signIn($email: String!, $password: String!) {
+    signIn(email: $email, password: $password) {
+      token
+      profile {
+        email
+      }
+    }
+  }
 `;
