@@ -50,10 +50,12 @@ function App() {
             <Route exact path="/addPark" component={AddPark} />
             <Route path="/dashboard" component={Dashboard} />
           </Switch>
-        </Router>
-      </ApolloProvider>
-    );
-  }
+
+          {/* <Footer /> */}
+        </div>
+      </Router>
+    </ApolloProvider>
+  );
 }
 
 export default App;
