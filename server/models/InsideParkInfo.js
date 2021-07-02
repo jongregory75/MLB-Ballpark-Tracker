@@ -15,8 +15,8 @@ const insideParkSchema = new Schema({
   },
 });
 
-const insideParkInfo = model("insideParkInfo", insideParkSchema);
+const InsideParkInfo = model("InsideParkInfo", insideParkSchema);
 
-module.exports = insideParkInfo;
+module.exports = InsideParkInfo;
 
 //comment

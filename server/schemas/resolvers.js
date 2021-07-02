@@ -1,5 +1,8 @@
 const { BallPark } = require("../models");
 const { Profile } = require("../models");
+const { BarInfo } = require("../models");
+const { InsideParkInfo } = require("../models");
+
 const { signToken } = require("../utils/auth");
 
 const resolvers = {
@@ -11,8 +14,20 @@ const resolvers = {
       return await Profile.find().populate("visitedParks");
     },
     division: async (parent, { division_abbrev }) => {
-      console.log("INSIDE SERVER RESOLVERS");
       return await BallPark.find({ division_abbrev }).populate("ballparks");
+    },
+    barinfo: async (parent, { franchise_code }) => {
+      return await BarInfo.find({ franchise_code }).populate("barinfo");
+    },
+    insideparkinfo: async (parent, { franchise_code }) => {
+      return await InsideParkInfo.find({ franchise_code }).populate(
+        "insideparkinfo"
+      );
+    },
+    ballparkbyid: async (parent, { franchise_code }) => {
+      return await BallPark.findOne({ franchise_code }).populate(
+        "ballparkbyid"
+      );
     },
   },
   Mutation: {
@@ -24,7 +39,7 @@ const resolvers = {
     },
     saveVisited: async (parent, { parkId }, context) => {
       if (context.user) {
-        console.log(parkId)
+        console.log(parkId);
         const profile = await Profile.findOneAndUpdate(
           { _id: context.user._id },
           {
