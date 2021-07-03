@@ -10,14 +10,14 @@ const ParksPage = () => {
   return (
     <>
       <div>
-        <h1>American League</h1>
+        <h1 className="text-center mb-2">American League</h1>
       </div>
 
       <ALWList />
       <ALCList />
       <ALEList />
       <div>
-        <h1>National League</h1>
+        <h1 className="text-center mb-2">National League</h1>
       </div>
       <NLWList />
       <NLEList />
