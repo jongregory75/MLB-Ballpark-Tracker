@@ -13,11 +13,7 @@ import Footer from "./components/Footer";
 import AddPark from "./pages/addPark";
 import Dashboard from "./pages/Dashboard";
 import ParksPage from "./pages/ParksPage";
-<<<<<<< HEAD
 import SinglePark from "./pages/SinglePark";
-=======
-
->>>>>>> main
 const client = new ApolloClient({
   uri: "/graphql",
   cache: new InMemoryCache(),
@@ -37,7 +33,7 @@ function App() {
               <Route path="/login" component={Login} />
               <Route path="/createUser" component={Signup} />
               <Route path="/parks" component={ParksPage} />
-              <Route path="/franchise" component={SinglePark} />
+              <Route exact path="/franchise" component={SinglePark} />
             </Switch>
             <Footer />
           </div>
@@ -48,19 +44,21 @@ function App() {
     return (
       <ApolloProvider client={client}>
         <Router>
-          <LoggedHeader />
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/createUser" component={Signup} />
-            <Route exact path="/addPark" component={AddPark} />
-            <Route path="/dashboard" component={Dashboard} />
-          </Switch>
+          <div>
+            <LoggedHeader />
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/createUser" component={Signup} />
+              <Route exact path="/addPark" component={AddPark} />
+              <Route path="/dashboard" component={Dashboard} />
+            </Switch>
 
-          {/* <Footer /> */}
-        </div>
-      </Router>
-    </ApolloProvider>
-  );
+            <Footer />
+          </div>
+        </Router>
+      </ApolloProvider>
+    );
+  }
 }
 
 export default App;

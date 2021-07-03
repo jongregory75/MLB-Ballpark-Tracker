@@ -1,15 +1,14 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
 import { BALLPARKBYID } from "../../utils/queries";
-import Auth from "../../utils/auth";
 
 const BallParkById = () => {
   const { loading, data, error } = useQuery(BALLPARKBYID, {
     variables: { franchise_code: "ARI" },
   });
   console.log("INSIDE BALLPARKBYID DATA NEXT");
-  console.table(data);
-  const dataList = data?.ballparkbyid || [];
+  console.log(data);
+  const dataList = data?.dataList || [];
   console.table(`INSIDE BALLPARKBYID ${data}`);
   return (
     <>
