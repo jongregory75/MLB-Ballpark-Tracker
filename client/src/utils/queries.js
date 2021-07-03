@@ -19,12 +19,15 @@ export const DIVISION = gql`
 export const QUERY_BALLPARKS = gql`
   query ballparks {
     ballparks {
+      _id
+      name_display_full
       phone_number
       city
     }
   }
 `;
 
+<<<<<<< HEAD
 export const QUERY_PROFILES = gql`
   query ballparks {
     ballparks {
@@ -78,3 +81,13 @@ export const BARINFO = gql`
     }
   }
 `;
+=======
+// export const QUERY_PROFILES = gql`
+//   query profiles {
+//     ballparks {
+//       phone_number
+//       city
+//     }
+//   }
+// `;
+>>>>>>> main

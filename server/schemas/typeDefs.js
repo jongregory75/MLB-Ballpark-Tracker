@@ -100,7 +100,6 @@ const typeDefs = gql`
     token: ID!
     profile: Profile
   }
-
   type Query {
     profiles: [Profile]
     ballparks: [BallPark]
@@ -109,7 +108,6 @@ const typeDefs = gql`
     insideparkinfo(franchise_code: String!): [InsideParkInfo]
     barinfo(franchise_code: String!): [BarInfo]
   }
-
   type Mutation {
     saveVisited(parkId: ID!): Profile
     signUp(email: String!, password: String!): Auth
