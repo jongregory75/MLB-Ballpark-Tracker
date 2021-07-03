@@ -13,16 +13,17 @@ const resolvers = {
       return await Profile.find().populate("visitedParks");
     },
     division: async (parent, { division_abbrev }) => {
-      console.log("INSIDE DIVISION RESOLVERS");
       return await BallPark.find({ division_abbrev }).populate("ballparks");
     },
     barinfo: async (parent, { franchise_code }) => {
-      console.log("INSIDE BARINFO RESOLVER");
       return await BarInfo.find({ franchise_code }).populate("ballparks");
     },
     insidepark: async (parent, { franchise_code }) => {
-      console.log("INSIDE INSIDEPARK RESOLVER");
       return await InsidePark.find({ franchise_code }).populate("insidepark");
+    },
+    parkbyid: async (parent, { franchise_code }) => {
+      console.log("INSIDE PARKBYID RESOLVER");
+      return await BallPark.find({ franchise_code }).populate("parkbyid");
     },
   },
   Mutation: {

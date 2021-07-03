@@ -1,6 +1,8 @@
 [
   {
     "franchise_code": "ARI",
+    "name_display_long": "Arizona Diamondbacks",
+    "venue_url_1": "https://www.seamusmccaffreys.com",
     "venue_name_1": "Seamus McCaffrey's Irish Pub",
     "venue_add_1": "18 W Monroe St, Phoenix, AZ 85003",
     "venue_rating_1": 4.4,
@@ -13,6 +15,7 @@
   },
   {
     "franchise_code": "BS1",
+    "name_display_long": "Atlanta Braves",
     "venue_name_1": "Keegan's Irish Pub",
     "venue_add_1": "4687 S Atlanta Rd SE Suite #224, Smyrna, GA 30080",
     "venue_rating_1": 4.4,
@@ -25,6 +28,7 @@
   },
   {
     "franchise_code": "MLA",
+    "name_display_long": "Baltimore Orioles",
     "venue_name_1": "Sliders Br and Grill",
     "venue_add_1": "504 Washington Blvd, Baltimore, MD 21230",
     "venue_rating_1": 4.3,
@@ -37,6 +41,7 @@
   },
   {
     "franchise_code": "BOS",
+    "name_display_long": "Boston Red Sox",
     "venue_name_1": "Landsdowne Pub",
     "venue_add_1": "9 Lansdowne St, Boston, MA 02215",
     "venue_rating_1": 4.1,
@@ -49,6 +54,7 @@
   },
   {
     "franchise_code": "CH2",
+    "name_display_long": "Chicago Cubs",
     "venue_name_1": "Toons Bar and Grill",
     "venue_add_1": "3857 N Southport Ave, Chicago, IL 60613",
     "venue_rating_1": 4.6,
@@ -61,6 +67,7 @@
   },
   {
     "franchise_code": "CHA",
+    "name_display_long": "Chicago White Sox",
     "venue_name_1": "Shinnicks Pub",
     "venue_add_1": "3758 S Union Ave, Chicago, IL 60609",
     "venue_rating_1": 4.2,
@@ -73,6 +80,7 @@
   },
   {
     "franchise_code": "CN2",
+    "name_display_long": "Cincinnati Reds",
     "venue_name_1": "Nicholson's Tavern and Pub",
     "venue_add_1": "625 Walnut St, Cincinnati, OH 45202",
     "venue_rating_1": 4.4,
@@ -85,6 +93,7 @@
   },
   {
     "franchise_code": "CLE",
+    "name_display_long": "Cleveland Indians",
     "venue_name_1": "Lincoln Park Pub",
     "venue_add_1": "2609 W 14th St, Cleveland, OH 44113",
     "venue_rating_1": 4.6,
@@ -97,6 +106,7 @@
   },
   {
     "franchise_code": "COL",
+    "name_display_long": "Colorado Rockies",
     "venue_name_1": "Swanky's Vittles and Libations",
     "venue_add_1": "1938 Blake St, Denver, CO 80202",
     "venue_rating_1": 4.4,
@@ -109,6 +119,7 @@
   },
   {
     "franchise_code": "DET",
+    "name_display_long": "Detroit Tigers",
     "venue_name_1": "Detroiter Bar",
     "venue_add_1": "655 Beaubien Blvd, Detroit, MI 48226",
     "venue_rating_1": 4.4,
@@ -121,6 +132,7 @@
   },
   {
     "franchise_code": "HOU",
+    "name_display_long": "Houston Astros",
     "venue_name_1": "King's Court Bar and Kitchen",
     "venue_add_1": "903 Hutchins St, Houston, TX 77003",
     "venue_rating_1": 4.4,
@@ -133,6 +145,7 @@
   },
   {
     "franchise_code": "KCA",
+    "name_display_long": "Kansas City Royals",
     "venue_name_1": "Score Sports Bar & Grill",
     "venue_add_1": "9100 East 35th St S, Independence, MO 64052",
     "venue_rating_1": 4.3,
@@ -145,6 +158,7 @@
   },
   {
     "franchise_code": "LAA",
+    "name_display_long": "Los Angeles Angels",
     "venue_name_1": "Tilted Kilt Pub & Eatery",
     "venue_add_1": "1625 W Katella Ave, Orange, CA 92867",
     "venue_rating_1": 4.2,
@@ -157,6 +171,7 @@
   },
   {
     "franchise_code": "BR3",
+    "name_display_long": "Los Angeles Dodgers",
     "venue_name_1": "Casey's Irish Pub",
     "venue_add_1": "613 S Grand Ave, Los Angeles, CA 90017",
     "venue_rating_1": 4.4,
@@ -169,6 +184,7 @@
   },
   {
     "franchise_code": "FLO",
+    "name_display_long": "Miami Marlins",
     "venue_name_1": "Champions Sports Bar",
     "venue_add_1": "1201 NW LeJeune Rd, Miami, FL 33126",
     "venue_rating_1": 3.9,
@@ -181,6 +197,7 @@
   },
   {
     "franchise_code": "SE1",
+    "name_display_long": "Milwaukee Brewers",
     "venue_name_1": "O'Lydia's Bar and Grill",
     "venue_add_1": "338 S 1st St, Milwaukee, WI 53204",
     "venue_rating_1": 4.5,
@@ -193,6 +210,7 @@
   },
   {
     "franchise_code": "WS1",
+    "name_display_long": "Minnesota Twins",
     "venue_name_1": "Trax Burgers and Bar",
     "venue_add_1": "525 N 5th St, Minneapolis, MN 55401",
     "venue_rating_1": 4.7,
@@ -205,6 +223,7 @@
   },
   {
     "franchise_code": "NYN",
+    "name_display_long": "New York Mets",
     "venue_name_1": "Tarros Bar",
     "venue_add_1": "11111 Roosevelt Ave, Corona, NY 11368",
     "venue_rating_1": 4.0,
@@ -217,6 +236,7 @@
   },
   {
     "franchise_code": "BLA",
+    "name_display_long": "New York Yankees",
     "venue_name_1": "Inwood Bar & Grill",
     "venue_add_1": "4892 Broadway, New York, NY 10034",
     "venue_rating_1": 4.6,
@@ -229,6 +249,7 @@
   },
   {
     "franchise_code": "PHA",
+    "name_display_long": "Oakland Athletics",
     "venue_name_1": "London Bar & Grill",
     "venue_add_1": "London Bar & Grill, 195 Hegenberger Rd, Oakland, CA 94621",
     "venue_rating_1": 4.4,
@@ -241,6 +262,7 @@
   },
   {
     "franchise_code": "WOR",
+    "name_display_long": "Philadelphia Phillies",
     "venue_name_1": "Stokes Sports Bar",
     "venue_add_1": "2651 S 16th St, Philadelphia, PA 19145",
     "venue_rating_1": 4.3,
@@ -253,6 +275,7 @@
   },
   {
     "franchise_code": "PT1",
+    "name_display_long": "Pittsburgh Pirates",
     "venue_name_1": "Primanti Bros. Restaurant and Bar Market Square",
     "venue_add_1": "2 Market Square, Pittsburgh, PA 15222",
     "venue_rating_1": 4.3,
@@ -265,6 +288,7 @@
   },
   {
     "franchise_code": "SDN",
+    "name_display_long": "San Diego Padres",
     "venue_name_1": "Tivoli Bar and Grill",
     "venue_add_1": "505 Sixth Ave, San Diego, CA 92101",
     "venue_rating_1": 4.4,
@@ -277,6 +301,7 @@
   },
   {
     "franchise_code": "TRN",
+    "name_display_long": "San Francisco Giants",
     "venue_name_1": "Louie's Bar",
     "venue_add_1": "55 Stevenson St, San Francisco, CA 94105",
     "venue_rating_1": 4.4,
@@ -289,6 +314,7 @@
   },
   {
     "franchise_code": "SEA",
+    "name_display_long": "Seattle Mariners",
     "venue_name_1": "King Street Bar & Oven",
     "venue_add_1": "170 S King St, Seattle, WA 98104",
     "venue_rating_1": 4.2,
@@ -301,6 +327,7 @@
   },
   {
     "franchise_code": "SL4",
+    "name_display_long": "St. Louis Cardinals",
     "venue_name_1": "Jack Patrick's Bar & Grill",
     "venue_add_1": "1000 Olive St, St. Louis, MO 63101",
     "venue_rating_1": 4.4,
@@ -313,6 +340,7 @@
   },
   {
     "franchise_code": "TBA",
+    "name_display_long": "Tampa Bay Rays",
     "venue_name_1": "Courigan's Irish Pub",
     "venue_add_1": "1 Beach Dr SE #41, St. Petersburg, FL 33701",
     "venue_rating_1": 4.4,
@@ -325,6 +353,7 @@
   },
   {
     "franchise_code": "TOR",
+    "name_display_long": "Toronto Blue Jays",
     "venue_name_1": "Bar Hop",
     "venue_add_1": "391 King St W, Toronto, ON M5V 1K1, Canada",
     "venue_rating_1": 4.4,
@@ -337,6 +366,7 @@
   },
   {
     "franchise_code": "MON",
+    "name_display_long": "Washington Nationals",
     "venue_name_1": "Walter's Sports Bar",
     "venue_add_1": "10th N St SE, Washington, DC 20003",
     "venue_rating_1": 4.2,
@@ -345,6 +375,19 @@
     "venue_rating_2": 4.0,
     "venue_name_3": "the brig",
     "venue_add_3": "1007 8th St SE, Washington, DC 20003",
+    "venue_rating_3": 4.4
+  },
+  {
+    "franchise_code": "WS2",
+    "name_display_long": "Texas Rangers",
+    "venue_name_1": "Buffalo Wings & Rings",
+    "venue_add_1": "2150 E Lamar Blvd Ste 110, Arlington, TX 76006",
+    "venue_rating_1": 4.2,
+    "venue_name_2": "Hooters",
+    "venue_add_2": "1511 N Collins, Arlington, TX 76011",
+    "venue_rating_2": 4.0,
+    "venue_name_3": "Water Hole Bar & Billiards",
+    "venue_add_3": "3620 Raider Dr Euless, TX 76040",
     "venue_rating_3": 4.4
   }
 ]

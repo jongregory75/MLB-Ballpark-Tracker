@@ -1,12 +1,12 @@
 import React from "react";
-import BallParkById from "../components/BallParkById";
+import ParkById from "../components/ParkById";
 import BarInfo from "../components/BarInfo";
 import InsidePark from "../components/InsidePark";
 
 const SinglePark = () => {
   return (
     <>
-      <BallParkById />
+      <ParkById />
       <BarInfo />
       <InsidePark />
     </>
