@@ -10,7 +10,7 @@ const ALWList = () => {
   const dataList = data?.division || [];
 
   return (
-    <>
+    <div>
       {loading ? (
         <div>Loading...</div>
       ) : data ? (
@@ -18,7 +18,10 @@ const ALWList = () => {
           <h1 className="text-center"> AL West </h1>
           <div className="d-flex flex-row flex-wrap justify-content-center">
             {dataList.map((ballparks) => (
-              <div className="card m-4 col-lg-4 col-md-6 col-sm-12">
+              <div
+                className="card m-4 col-lg-4 col-md-6 col-sm-12"
+                key={ballparks.franchise_code}
+              >
                 <div className="card-header">
                   <Link to={"park/" + ballparks.franchise_code}>
                     <h4>Name: {ballparks.name_display_long}</h4>
@@ -39,7 +42,7 @@ const ALWList = () => {
         </div>
       ) : null}
       {error ? `ERROR ${JSON.stringify(error)}` : null}
-    </>
+    </div>
   );
 };
 

@@ -17,7 +17,10 @@ function NLCList() {
           <h1 className="text-center"> NL Central </h1>
           <div className="d-flex flex-row flex-wrap justify-content-center">
             {dataList.map((ballparks) => (
-              <div className="card m-4 col-lg-4 col-md-6 col-sm-12">
+              <div
+                className="card m-4 col-lg-4 col-md-6 col-sm-12"
+                key={ballparks.franchise_code}
+              >
                 <div className="card-header">
                   <Link to={"park/" + ballparks.franchise_code}>
                     <h4>Name: {ballparks.name_display_long}</h4>
