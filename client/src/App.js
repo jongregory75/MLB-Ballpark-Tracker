@@ -22,10 +22,7 @@ import AddPark from "./pages/addPark";
 import Dashboard from "./pages/Dashboard";
 import ParksPage from "./pages/ParksPage";
 import Auth from "./utils/auth";
-// const client = new ApolloClient({
-//   uri: "/graphql",
-//   cache: new InMemoryCache(),
-// });
+// import SinglePark from "./pages/SinglePark";
 const httpLink = createHttpLink({
   uri: "/graphql",
 });

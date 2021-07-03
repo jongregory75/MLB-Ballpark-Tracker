@@ -1,6 +1,7 @@
 import React from "react";
 import { DIVISION } from "../../utils/queries";
 import { useQuery } from "@apollo/client";
+import { Link } from "react-router-dom";
 
 const ALWList = () => {
   const { loading, data, error } = useQuery(DIVISION, {
@@ -9,24 +10,28 @@ const ALWList = () => {
   const dataList = data?.division || [];
 
   return (
-    <>
+    <div>
       {loading ? (
         <div>Loading...</div>
       ) : data ? (
         <div>
-          <div>AL West: </div>
-          <div className="col-12 col-md-10 mb-5">
+          <h1 className="text-center"> AL West </h1>
+          <div className="d-flex flex-row flex-wrap justify-content-center">
             {dataList.map((ballparks) => (
-              <div className="card mb-3">
+              <div
+                className="card m-4 col-lg-4 col-md-6 col-sm-12"
+                key={ballparks.franchise_code}
+              >
                 <div className="card-header">
-                  <h4>Name:{ballparks.name_display_long}</h4>
+                  <Link to={"park/" + ballparks.franchise_code}>
+                    <h4>Name: {ballparks.name_display_long}</h4>
+                  </Link>
                 </div>
                 <div className="card-body">
                   <h4>Stadium: {ballparks.venue_name}</h4>
                   <h4>Phone: {ballparks.phone_number}</h4>
                   <h4>Address: {ballparks.address_line1}</h4>
                   <h4>City: {ballparks.address_city}</h4>
-                  <h4>State: {ballparks.address_state}</h4>
                   <h4>State: {ballparks.address_state}</h4>
                   <h4>Web Site: {ballparks.website_url}</h4>
                 </div>
@@ -37,7 +42,7 @@ const ALWList = () => {
         </div>
       ) : null}
       {error ? `ERROR ${JSON.stringify(error)}` : null}
-    </>
+    </div>
   );
 };
 
