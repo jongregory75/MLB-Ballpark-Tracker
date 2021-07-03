@@ -5,6 +5,9 @@ const barInfoSchema = new Schema({
   franchise_code: {
     type: String,
   },
+  name_display_long: {
+    type: String,
+  },
   venue_name_1: {
     type: String,
   },

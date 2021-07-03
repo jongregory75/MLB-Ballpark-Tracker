@@ -30,7 +30,7 @@ function NLCList() {
                   <h4>Stadium: {ballparks.venue_name}</h4>
                   <h4>Phone: {ballparks.phone_number}</h4>
                   <h4>Address: {ballparks.address_line1}</h4>
-                  <h4>City: {ballparks.address_city}</h4>
+                  <h4>City: {ballparks.city}</h4>
                   <h4>State: {ballparks.address_state}</h4>
                   <h4>Web Site: {ballparks.website_url}</h4>
                 </div>

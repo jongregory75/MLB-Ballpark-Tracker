@@ -1,24 +1,28 @@
 [
   {
     "franchise_code": "ARI",
+    "name_display_long": "Arizona Diamondbacks",
     "menu_1": "Ultimate Bacon Pub Burger",
     "menu_2": "Poblano Cheesesteak",
     "menu_3": "Beer Cheese Baratwurst"
   },
   {
     "franchise_code": "BS1",
+    "name_display_long": "Atlanta Braves",
     "menu_1": "Gu's Dumplings",
     "menu_2": "Mongolian Grill Cheddar Bratwurst",
     "menu_3": "Chili Lime French Fries"
   },
   {
     "franchise_code": "MLA",
+    "name_display_long": "Baltimore Orioles",
     "menu_1": "Jade Satay",
     "menu_2": "Corona Street Taco",
     "menu_3": "Lobster Roll"
   },
   {
     "franchise_code": "BOS",
+    "name_display_long": "Boston Red Sox",
     "menu_1": "Clam Chowder",
     "menu_2": "Pot Roast Sandwich",
     "menu_3": "Fried Dough"
@@ -31,156 +35,175 @@
   },
   {
     "franchise_code": "CHA",
+    "name_display_long": "Chicago Cubs",
     "menu_1": "Spicy Chicken Wings",
     "menu_2": "Buffalo Cauliflower Wraps",
     "menu_3": "Smoked BBQ Pork Sandwich"
   },
   {
     "franchise_code": "CN2",
+    "name_display_long": "Cincinnati Reds",
     "menu_1": "House Smoked Turkey Sandwich",
     "menu_2": "The Smokehouse Parfait",
     "menu_3": "Smore's Frybox"
   },
   {
     "franchise_code": "CLE",
+    "name_display_long": "Cleveland Indians",
     "menu_1": "Chorizo Grilled Cheese",
     "menu_2": "Dyngus Dog",
     "menu_3": "Silver Bullet Burrito"
   },
   {
     "franchise_code": "COL",
+    "name_display_long": "Colorado Rockies",
     "menu_1": "Biker Jim's Jackalope Sausage",
     "menu_2": "Sliced Brisket Sandwich",
     "menu_3": "Helton Shakes"
   },
   {
     "franchise_code": "DET",
+    "name_display_long": "Detroit Tigers",
     "menu_1": "Coney Dog Egg Rolls",
     "menu_2": "Al Pastor Dog",
     "menu_3": "Zeppole"
   },
   {
     "franchise_code": "HOU",
+    "name_display_long": "Houston Astros",
     "menu_1": "Mashed Potato Waffle Cone",
     "menu_2": "Fried Chicken Balls",
     "menu_3": "Pulled Pork Tacos"
   },
   {
     "franchise_code": "KCA",
+    "name_display_long": "Kansas City Royals",
     "menu_1": "Brisket-Acho",
     "menu_2": "Street Taco Trio",
     "menu_3": "Reuben Sandwich"
   },
   {
     "franchise_code": "LAA",
+    "name_display_long": "Los Angeles Angels",
     "menu_1": "Kalibi Short Ribs",
     "menu_2": "Thai Shrimp Salad",
     "menu_3": "Lemon Tart"
   },
   {
     "franchise_code": "BR3",
+    "name_display_long": "Los Angeles Dodgers",
     "menu_1": "Burnt End Nachos",
     "menu_2": "Dodger Dog",
     "menu_3": "Carne Asada Helmet Nachos"
   },
   {
     "franchise_code": "FLO",
+    "name_display_long": "Miami Marlins",
     "menu_1": "Miami Mex Taco Dog",
     "menu_2": "Lechon Pork Nachos",
     "menu_3": "House-Smoked Beef Brisket Mac & Cheese"
   },
   {
     "franchise_code": "SE1",
+    "name_display_long": "Milwaukee Brewers",
     "menu_1": "The Yeli Melt",
     "menu_2": "Street-za Pizza",
     "menu_3": "Loaded Fries"
   },
   {
     "franchise_code": "WS1",
+    "name_display_long": "Minnesota Twins",
     "menu_1": "Cease and Desist Burger",
     "menu_2": "Kramarczuk's Sausage",
     "menu_3": "Tony O's Cuban Sandwich"
   },
   {
     "franchise_code": "NYN",
+    "name_display_long": "New York Mets",
     "menu_1": "Lobster Grilled Cheese",
     "menu_2": "Balck-Eyed Pea Hummus Wrap",
     "menu_3": "The People's Champion Burger"
   },
   {
     "franchise_code": "BLA",
+    "name_display_long": "New York Yankees",
     "menu_1": "Carmalized Onion French Dip Sandwich",
     "menu_2": "Grilled Cheese Fries",
     "menu_3": "Flatiron Steak With Fries"
   },
   {
     "franchise_code": "PHA",
+    "name_display_long": "Oakland Athletics",
     "menu_1": "Saag's Sausages",
     "menu_2": "BBQ Tri-Tip",
     "menu_3": "Shake Shack Ice Cream"
   },
   {
     "franchise_code": "WOR",
+    "name_display_long": "Philadelphia Phillies",
     "menu_1": "Federal Donuts",
     "menu_2": "Cheesy Bacon Topped Tots",
     "menu_3": "Chickie & Pete's Crab Fries"
   },
   {
     "franchise_code": "PT1",
+    "name_display_long": "Pittsburgh Pirates",
     "menu_1": "Primanti's Sandwiches",
     "menu_2": "Quaker Steak & Lube",
     "menu_3": "Rita's Italian Ice"
   },
   {
     "franchise_code": "SDN",
+    "name_display_long": "San Diego Padres",
     "menu_1": "Buona Forchetta Neopolitan Pizza",
     "menu_2": "Kurobuto Pork Bun",
     "menu_3": "BBQ Tri-Tip"
   },
   {
     "franchise_code": "TRN",
+    "name_display_long": "San Francisco Giants",
     "menu_1": "Impossible Burgers",
     "menu_2": "Dungeness Crab Sandwich",
     "menu_3": "Orlandp's Cha-Cha Bowl"
   },
   {
     "franchise_code": "SEA",
+    "name_display_long": "Seattle Mariners",
     "menu_1": "Caribbean Roast Sandwich",
     "menu_2": "Big Woody Burger",
     "menu_3": "Kuku Fries"
   },
   {
     "franchise_code": "SL4",
+    "name_display_long": "St. Louis Cardinals",
     "menu_1": "The Bratzel",
     "menu_2": "Helmet Mini Donuts",
     "menu_3": "Knishes"
   },
   {
     "franchise_code": "TBA",
+    "name_display_long": "Tampa Bay Rays",
     "menu_1": "Beans & Barlour Boozy Milkshake",
     "menu_2": "Pork and Beer Cheese Sandwich",
     "menu_3": "Modern Bird Chicken Wings"
   },
   {
     "franchise_code": "WS2",
+    "name_display_long": "Texas Rangers",
     "menu_1": "The Dilly Dog",
     "menu_2": "The Triple B",
     "menu_3": "7th Inning Cinnamon Roll"
   },
   {
     "franchise_code": "TOR",
-    "menu_1": "Poutine",
-    "menu_2": "Louisian Lickers",
-    "menu_3": "Chopped Beef Sirloin"
-  },
-  {
-    "franchise_code": "TOR",
+    "name_display_long": "Toronto Blue Jays",
     "menu_1": "Poutine",
     "menu_2": "Louisian Lickers",
     "menu_3": "Chopped Beef Sirloin"
   },
   {
     "franchise_code": "MON",
+    "name_display_long": "Washington Nationals",
     "menu_1": "Pork Arepa",
     "menu_2": "Waffle Fries with Spicy Sweet Seasoning",
     "menu_3": "Shucked Oysters"
