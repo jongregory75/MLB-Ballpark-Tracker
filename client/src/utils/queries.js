@@ -12,6 +12,7 @@ export const DIVISION = gql`
       phone_number
       website_url
       division_abbrev
+      franchise_code
     }
   }
 `;
