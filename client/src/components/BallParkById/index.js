@@ -8,7 +8,7 @@ const BallParkById = () => {
   });
   console.log("INSIDE BALLPARKBYID DATA NEXT");
   console.log(data);
-  const dataList = data?.dataList || [];
+  const dataList = data?.ballparkbyid || [];
   console.table(`INSIDE BALLPARKBYID ${data}`);
   return (
     <>

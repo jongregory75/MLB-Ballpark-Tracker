@@ -27,15 +27,14 @@ export const QUERY_BALLPARKS = gql`
   }
 `;
 
-<<<<<<< HEAD
-export const QUERY_PROFILES = gql`
-  query ballparks {
-    ballparks {
-      phone_number
-      city
-    }
-  }
-`;
+// export const QUERY_PROFILES = gql`
+//   query ballparks {
+//     ballparks {
+//       phone_number
+//       city
+//     }
+//   }
+// `;
 
 export const INSIDEPARKINFO = gql`
   query insideparkinfo($franchise_code: String!) {
@@ -81,13 +80,3 @@ export const BARINFO = gql`
     }
   }
 `;
-=======
-// export const QUERY_PROFILES = gql`
-//   query profiles {
-//     ballparks {
-//       phone_number
-//       city
-//     }
-//   }
-// `;
->>>>>>> main
