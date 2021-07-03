@@ -1,12 +1,15 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
 import { DIVISION } from "../../utils/queries";
+import { Link } from "react-router-dom";
 
 const ALCList = () => {
   const { loading, data } = useQuery(DIVISION, {
     variables: { division_abbrev: "ALC" },
   });
   const dataList = data?.division || [];
+
+  console.log(dataList);
 
   return (
     <>
@@ -19,7 +22,9 @@ const ALCList = () => {
             {dataList.map((ballparks) => (
               <div className="card mb-3">
                 <div className="card-header">
-                  <h4>Name:{ballparks.name_display_long}</h4>
+                  <Link to={"park/" + ballparks.franchise_code}>
+                    <h4>Name:{ballparks.name_display_long}</h4>
+                  </Link>
                 </div>
                 <div className="card-body">
                   <h4>Stadium: {ballparks.venue_name}</h4>
