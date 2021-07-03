@@ -88,16 +88,26 @@ const typeDefs = gql`
     venue_rating_3: Float
   }
 
+  type InsidePark {
+    franchise_code: String!
+    menu_1: String
+    menu_2: String
+    menu_3: String
+  }
+
   type Auth {
     token: ID!
     profile: Profile
   }
+
   type Query {
     profiles: [Profile]
     ballparks: [BallPark]
     division(division_abbrev: String!): [BallPark]
     barinfo(franchise_code: String!): [BarInfo]
+    insidepark(franchise_code: String!): [InsidePark]
   }
+
   type Mutation {
     saveVisited(parkId: ID!): Profile
     signUp(email: String!, password: String!): Auth

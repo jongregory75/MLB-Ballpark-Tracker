@@ -1,6 +1,7 @@
 const { BallPark } = require("../models");
 const { Profile } = require("../models");
 const { BarInfo } = require("../models");
+const { InsidePark } = require("../models");
 const { signToken } = require("../utils/auth");
 
 const resolvers = {
@@ -18,6 +19,10 @@ const resolvers = {
     barinfo: async (parent, { franchise_code }) => {
       console.log("INSIDE BARINFO RESOLVER");
       return await BarInfo.find({ franchise_code }).populate("ballparks");
+    },
+    insidepark: async (parent, { franchise_code }) => {
+      console.log("INSIDE INSIDEPARK RESOLVER");
+      return await InsidePark.find({ franchise_code }).populate("insidepark");
     },
   },
   Mutation: {
