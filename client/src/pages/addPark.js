@@ -9,7 +9,7 @@ const AddPark = () => {
 
   const { loading, data } = useQuery(QUERY_BALLPARKS);
   const ballParkData = data?.ballparks || [];
-  console.log(ballParkData);
+  // console.log(ballParkData);
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormState({
@@ -29,36 +29,38 @@ const AddPark = () => {
 
   return (
     <main className="addVisitArea">
-      <div className="col-sm-3 col-md-6 col-lg-9 m-auto">
-        <div className="card mx-auto mt-10 bg-light">
-          <div className="card-body text-center">
-            <h2 className="card-title text-center mb-5">
-              Add a Park to Your List
-            </h2>
-            <div className="row mt-10">
-              <h5 className="mt-10">Choose a Park to Add</h5>
-              <select name="venue" onChange={handleChange} id="venue">
-                {ballParkData.length > 0
-                  ? ballParkData.map((ballPark) => {
-                      return (
-                        <option value={ballPark._id} selected="selected">
-                          {ballPark.name_display_full}
-                        </option>
-                      );
-                    })
-                  : ""}
-              </select>
+      <form onSubmit={handleFormSubmit}>
+        <div className="col-sm-3 col-md-6 col-lg-9 m-auto">
+          <div className="card mx-auto mt-10 bg-light">
+            <div className="card-body text-center">
+              <h2 className="card-title text-center mb-5">
+                Add a Park to Your List
+              </h2>
+              <div className="row mt-10">
+                <h5 className="mt-10">Choose a Park to Add</h5>
+                <select name="venue" onChange={handleChange} id="venue">
+                  {ballParkData.length > 0
+                    ? ballParkData.map((ballPark) => {
+                        return (
+                          <option value={ballPark._id} selected="selected">
+                            {ballPark.name_display_full}
+                          </option>
+                        );
+                      })
+                    : ""}
+                </select>
+              </div>
+              <button
+                type="button"
+                className="btn btn-primary btn-lg mt-5"
+                id="submitButton"
+              >
+                Submit
+              </button>
             </div>
-            <button
-              type="button"
-              className="btn btn-primary btn-lg mt-5"
-              id="submitButton"
-            >
-              Submit
-            </button>
           </div>
         </div>
-      </div>
+      </form>
     </main>
   );
 };
