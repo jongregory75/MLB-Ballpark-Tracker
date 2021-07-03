@@ -1,9 +1,14 @@
 import React from "react";
 import logo from "../../assets/logo.png";
+import Auth from "../../utils/auth";
 
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  function handleLogout() {
+    Auth.logout();
+  }
+
   return (
     <header>
       <div className="container-fluid">
@@ -37,7 +42,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/logout">
+                  <Link className="nav-link" onClick={handleLogout}>
                     <p>Logout</p>
                   </Link>
                 </li>
