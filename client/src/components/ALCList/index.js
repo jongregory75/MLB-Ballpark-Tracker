@@ -9,8 +9,6 @@ const ALCList = () => {
   });
   const dataList = data?.division || [];
 
-  console.log(dataList);
-
   return (
     <>
       {loading ? (
