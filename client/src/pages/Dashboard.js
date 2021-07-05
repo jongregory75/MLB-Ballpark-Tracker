@@ -2,6 +2,7 @@ import React from "react";
 
 import mlbMap from "../assets/mlb-maps.png";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 const Dashboard = () => {
   return (
