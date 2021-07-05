@@ -23,6 +23,14 @@ import Dashboard from "./pages/Dashboard";
 import ParksPage from "./pages/ParksPage";
 import SinglePark from "./pages/SinglePark";
 import Auth from "./utils/auth";
+<<<<<<< HEAD
+=======
+
+// const client = new ApolloClient({
+//   uri: "/graphql",
+//   cache: new InMemoryCache(),
+// });
+>>>>>>> 730c99dfe9a728b5389f9768af4a106a737d3f85
 // import SinglePark from "./pages/SinglePark";
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -62,7 +70,7 @@ function App() {
               <Route exact path="/addPark" component={AddPark} />
               <Route exact path="/dashboard" component={Dashboard} />
               <Route exact path="/parks" component={ParksPage} />
-              <Route exact path="/franchise" component={SinglePark} />
+              <Route path="/park/:id" component={SinglePark} />
             </Switch>
             <Footer />
           </div>
@@ -81,7 +89,7 @@ function App() {
             <Route exact path="/addPark" component={AddPark} />
             <Route path="/dashboard" component={Dashboard} />
             <Route exact path="/parks" component={ParksPage} />
-            <Route exact path="/franchise" component={SinglePark} />
+            <Route exact path="/park/:id" component={SinglePark} />
           </Switch>
         </Router>
       </ApolloProvider>
