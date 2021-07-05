@@ -7,7 +7,7 @@ const AddPark = () => {
   const [formState, setFormState] = useState({ phone_number: "", city: "" });
   const [saveVisited] = useMutation(SAVE_VISITED);
 
-  const { loading, data } = useQuery(QUERY_BALLPARKS);
+  const { data } = useQuery(QUERY_BALLPARKS);
   const ballParkData = data?.ballparks || [];
   // console.log(ballParkData);
   const handleChange = (event) => {
@@ -19,7 +19,7 @@ const AddPark = () => {
   };
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-    const mutationResponse = await saveVisited({
+    await saveVisited({
       variables: {
         phone_number: formState.phone_number,
         city: formState.city,

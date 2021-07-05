@@ -17,7 +17,7 @@ const ParkById = (franchise_code) => {
         <div>
           <div className="col-12 col-md-10 mb-5">
             {dataList.map((parkbyid) => (
-              <div className="card mb-3">
+              <div className="card mb-3" key={parkbyid.venue_name}>
                 <div className="card-header">
                   <h4>Name:{parkbyid.name_display_long}</h4>
                 </div>

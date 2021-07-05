@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
 import { BARINFO } from "../../utils/queries";
 import { useQuery } from "@apollo/client";
 
@@ -18,7 +17,7 @@ const BarInfo = (franchise_code) => {
         <div>
           <div className="col-12 col-md-10 mb-5">
             {dataList.map((barinfo) => (
-              <div className="card mb-3">
+              <div className="card mb-3" key="barInfo">
                 <div className="card-body">
                   <h4>
                     Bar #1: {barinfo.venue_url_1} {barinfo.venue_name_1}
