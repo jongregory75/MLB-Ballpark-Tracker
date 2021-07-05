@@ -5,15 +5,12 @@ import { SAVE_VISITED } from "../utils/mutations";
 import { useQuery, useMutation } from "@apollo/client";
 import { QUERY_BALLPARKS } from "../utils/queries";
 
-<<<<<<< HEAD
 //**SAVE VISITED PARKS PAGE WITH QUERY AND MUTATION**//
 
 const AddPark = (props) => {
   const [formState, setFormState] = useState({ parkId: "" });
   const [saveVisited] = useMutation(SAVE_VISITED);
   //**had loading, data */
-=======
->>>>>>> main
   const { data } = useQuery(QUERY_BALLPARKS);
   const ballParkData = data?.ballparks || [];
   // console.log(ballParkData);
