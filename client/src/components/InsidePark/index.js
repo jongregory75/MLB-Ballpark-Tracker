@@ -2,9 +2,9 @@ import React from "react";
 import { INSIDEPARK } from "../../utils/queries";
 import { useQuery } from "@apollo/client";
 
-const InsidePark = () => {
+const InsidePark = (franchise_code) => {
   const { loading, data, error } = useQuery(INSIDEPARK, {
-    variables: { franchise_code: "ARI" },
+    variables: { franchise_code: franchise_code.franchise_code },
   });
 
   const dataList = data?.insidepark || [];

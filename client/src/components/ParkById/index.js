@@ -2,9 +2,9 @@ import React from "react";
 import { PARKBYID } from "../../utils/queries";
 import { useQuery } from "@apollo/client";
 
-const ParkById = () => {
+const ParkById = (franchise_code) => {
   const { loading, data, error } = useQuery(PARKBYID, {
-    variables: { franchise_code: "ARI" },
+    variables: { franchise_code: franchise_code.franchise_code },
   });
 
   const dataList = data?.parkbyid || [];
