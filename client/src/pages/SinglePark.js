@@ -1,14 +1,14 @@
 import React from "react";
-import BallParkById from "../components/BallParkById";
+import ParkById from "../components/ParkById";
 import BarInfo from "../components/BarInfo";
 import InsidePark from "../components/InsidePark";
 
-const SinglePark = () => {
+const SinglePark = (props) => {
   return (
     <>
-      <BallParkById />
-      <BarInfo />
-      <InsidePark />
+      <ParkById franchise_code={props.match.params.id} />
+      <BarInfo franchise_code={props.match.params.id} />
+      <InsidePark franchise_code={props.match.params.id} />
     </>
   );
 };

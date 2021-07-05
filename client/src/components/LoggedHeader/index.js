@@ -42,7 +42,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" onClick={handleLogout}>
+                  <Link className="nav-link" onClick={handleLogout} to="/">
                     <p>Logout</p>
                   </Link>
                 </li>

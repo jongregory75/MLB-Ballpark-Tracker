@@ -9,6 +9,10 @@ html {
   box-sizing: border-box;
 }
 
+main {
+  margin-bottom: 20%;
+}
+
 /* Navbar CSS */
 
 nav {
@@ -48,6 +52,7 @@ nav {
   max-width: 400px;
   padding: 20px;
   margin: auto;
+  margin-bottom: 20%;
 }
 
 .form-signin img {

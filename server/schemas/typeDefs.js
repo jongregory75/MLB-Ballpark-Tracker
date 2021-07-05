@@ -106,6 +106,7 @@ const typeDefs = gql`
     division(division_abbrev: String!): [BallPark]
     barinfo(franchise_code: String!): [BarInfo]
     insidepark(franchise_code: String!): [InsidePark]
+    parkbyid(franchise_code: String!): [BallPark]
   }
 
   type Mutation {
