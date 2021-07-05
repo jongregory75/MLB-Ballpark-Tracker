@@ -2,72 +2,84 @@
 
 # Description
 
-An open source MERN (MongoDB,Express.js,React.js,Node.js) project that allows users to plan trips to MLB Ballparks. Users can create trips, find pre-game bar/food options and document their trips with pictures, comments, tips.
+An open source MERN (MongoDB,Express.js,React.js,Node.js) project that allows users to plan trips to MLB Ballparks. Find stadium information, pre-game bar/food options, in-game food options.
 
 # Features:
 
-        Express.js / React.js / Node.js -
-        - User Table for authentication/state cookies
-        - BallPark Table for address, stadium name, etc
-        - TODO: build out features list
-        - Routing (CRUD operations)
+### MongoDB, Express.js / React.js / Node.js
 
-        MongoDB and Mongoose - Database
-        - Models
-        - Seeds
+### MongoDB / Mongoose
 
-        Undiscussed Technology
-        Yelp API
-        Google Geolocation API
-        TODO: Include any other API calls
+- Profile Table for authentication/state JWT
+- BallPark Table for address, stadium name, etc
+- BarInfo Table for pre-game bars to checkout
+- InsidePark Table for in-game best of food options
+- npm run seed to seed collections
 
-        MVC Folder Structure
+### React
 
-        Authentication
+- dynamically generated page content
+- division rendering components
+- BarInfo, BallPark, InsidePark components to render database queries
 
-        Express Sessions
-
-        Cookies Usage
-
-        Heroku Deployed
+- MVC Folder Structure
+- Authentication
+- Express Sessions
+- Heroku Deployed
 
 # Dependencies:
 
-concurrently 5.3.0
+concurrently: 5.3.0
 
 ## Client
 
-bcrypt 5.0.0
-bootstrap 5.0.1
-bootswatch 5.0.1
-apollo/client 3.3.6
-graphql 15.4.0
-react 17.0.1
-react-dom 17.0.1
-react-router-dom 5.2.0
-react-scripts 4.0.1
+- @apollo/client: ^3.3.6
+- @popperjs/core: ^2.9.2
+- @testing-library/jest-dom: ^5.11.6
+- @testing-library/react: ^11.2.2
+- @testing-library/user-event: ^12.5.0
+- bcryptjs: ^2.4.3
+- bootstrap: ^5.0.2
+- graphql: ^15.5.1
+- jwt-decode: ^2.2.0
+- react: ^17.0.1
+- react-dom: ^17.0.1
+- react-router-dom: ^5.2.0
+- react-scripts: 4.0.1
 
 ## Server
 
-apollo-server-express 2.19.0
-express 4.17.1
-mongoose 5.11.6
-dotenv 8.2.0
-nodemon
-express 4.17.1
-express-session 1.17.2
-moment 2.29.1
+- apollo-server-express 2.19.0
+- express 4.17.1
+- mongoose 5.11.6
+- dotenv 8.2.0
+- express 4.17.1
+- express-session 1.17.2
+- moment 2.29.1
+- apollo-server-express: 2.19.0
+- bcrypt: 5.0.1
+- express: 4.17.1
+- graphql: 15.5.1
+- jsonwebtoken: 8.5.1
+- mongoose: 5.11.6
+- nodemon": 2.0.8
 
 # Installation
 
-        STEPS:
-        -Run seed.js
-        -Run server.js
+STEPS:
+-'npm i' to install node modules
+
+-'npm run seed' to seed BallPark/Team, BarInfo, InsideParkInfo
+
+-npm run start
 
 # Roadmap
 
-        Add Features
-        - Trips
+- Additional in-game information
+- Add google geolocation for mapping bars in proximity to stadium
+- Ability to generate "Trip"
+  - tie into travel management, hotels/airfare/etc
+  - tie into tickets, will need game schedule DB
 
 # Authors and acknowledgment
 
@@ -80,20 +92,8 @@ samrobers (Sam Roberson).
 
 Open Source
 
-# DEPLOYMENT STUFF
+# Links
 
-> **Important:** Look into using a MongoDB aggregate function to dynamically add up and return the total duration for each workout. Check out the [MongoDB documentation on the $addFields](https://docs.mongodb.com/manual/reference/operator/aggregation/addFields/), the [MongoDB documentation on the $sum operator](https://docs.mongodb.com/manual/reference/operator/aggregation/sum/), and the [Mongoose documentation on aggregate functions](https://mongoosejs.com/docs/api.html#aggregate_Aggregate) to learn how it can be accomplished.
+Heroku Deployment: https://calm-lake-10775.herokuapp.com/
 
-To deploy an application with a MongoDB database to Heroku, you'll need to set up a MongoDB Atlas account and connect a database from there to your application. Be sure to use the following guides for support:
-
-- [Set Up MongoDB Atlas](../04-Important/MongoAtlas-Setup.md)
-
-- [Deploy with Heroku and MongoDB Atlas](../04-Important/MongoAtlas-Deploy.md)
-
-## Submission on BCS
-
-You are required to submit the following:
-
-- The URL to the deployed application
-
-- The URL to the GitHub repository
+GitHub Repository: https://github.com/jongregory75/MLB-Ballpark-Tracker
