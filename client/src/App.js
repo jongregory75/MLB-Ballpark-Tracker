@@ -23,14 +23,11 @@ import Dashboard from "./pages/Dashboard";
 import ParksPage from "./pages/ParksPage";
 import SinglePark from "./pages/SinglePark";
 import Auth from "./utils/auth";
-<<<<<<< HEAD
-=======
 
 // const client = new ApolloClient({
 //   uri: "/graphql",
 //   cache: new InMemoryCache(),
 // });
->>>>>>> 730c99dfe9a728b5389f9768af4a106a737d3f85
 // import SinglePark from "./pages/SinglePark";
 const httpLink = createHttpLink({
   uri: "/graphql",
