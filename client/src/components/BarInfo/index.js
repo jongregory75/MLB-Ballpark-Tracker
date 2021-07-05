@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 import { BARINFO } from "../../utils/queries";
 import { useQuery } from "@apollo/client";
 
-const BarInfo = () => {
+const BarInfo = (franchise_code) => {
   const { loading, data, error } = useQuery(BARINFO, {
-    variables: { franchise_code: "ARI" },
+    variables: { franchise_code: franchise_code.franchise_code },
   });
 
   const dataList = data?.barinfo || [];
