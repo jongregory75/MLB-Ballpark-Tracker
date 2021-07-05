@@ -21,8 +21,6 @@ export const QUERY_BALLPARKS = gql`
     ballparks {
       _id
       name_display_full
-      phone_number
-      city
     }
   }
 `;

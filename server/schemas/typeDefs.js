@@ -109,7 +109,7 @@ const typeDefs = gql`
   }
 
   type Mutation {
-    saveVisited(parkId: ID!): Profile
+    saveVisited(parkId: String!): Profile
     signUp(email: String!, password: String!): Auth
     signIn(email: String!, password: String!): Auth
   }
