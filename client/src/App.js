@@ -88,6 +88,7 @@ function App() {
             <Route exact path="/parks" component={ParksPage} />
             <Route exact path="/park/:id" component={SinglePark} />
           </Switch>
+          <Footer />
         </Router>
       </ApolloProvider>
     );
