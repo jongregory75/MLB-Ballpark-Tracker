@@ -102,6 +102,7 @@ const typeDefs = gql`
 
   type Query {
     profiles: [Profile]
+    profileById: Profile
     ballparks: [BallPark]
     division(division_abbrev: String!): [BallPark]
     barinfo(franchise_code: String!): [BarInfo]

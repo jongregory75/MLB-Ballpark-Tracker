@@ -1,7 +1,7 @@
 import { gql } from "@apollo/client";
 
 export const SAVE_VISITED = gql`
-  mutation saveVisited($parkId: ID!) {
+  mutation saveVisited($parkId: String!) {
     saveVisited(parkId: $parkId) {
       email
       visitedParks {

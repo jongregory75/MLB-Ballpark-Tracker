@@ -10,7 +10,7 @@ import { QUERY_BALLPARKS } from "../utils/queries";
 const AddPark = (props) => {
   const [formState, setFormState] = useState({ parkId: "" });
   const [saveVisited] = useMutation(SAVE_VISITED);
-  //**had loading, data */
+  //**had loading, data *//
   const { data } = useQuery(QUERY_BALLPARKS);
   const ballParkData = data?.ballparks || [];
   // console.log(ballParkData);
@@ -36,11 +36,9 @@ const AddPark = (props) => {
         parkId: formState.parkId,
       },
     });
-    console.log(formState, "After");
-    console.log(
-      mutationResponse,
-      "---------mutation do you seeee thisss guyyy"
-    );
+    console.log(formState, " After Save Visited Mutation Response");
+    console.log(mutationResponse, "---------mutation Response");
+    window.location.href = "/dashboard";
     // } catch (event) {
     //   console.log(event);
     // }

@@ -6,6 +6,12 @@ const { signToken } = require("../utils/auth");
 
 const resolvers = {
   Query: {
+    profileById: async (parent, args, context) => {
+      console.log(context.user, "------USER");
+      return await Profile.findOne({ _id: context.user._id }).populate(
+        "visitedParks"
+      );
+    },
     ballparks: async () => {
       return await BallPark.find();
     },
