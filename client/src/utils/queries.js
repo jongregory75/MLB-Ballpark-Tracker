@@ -55,14 +55,22 @@ export const BARINFO = gql`
     }
   }
 `;
+export const QUERY_PROFILE_ID = gql`
+  query profileById {
+    profileById {
+      email
+      visitedParks {
+        name_display_full
+      }
+    }
+  }
+`;
 
 export const QUERY_BALLPARKS = gql`
   query ballparks {
     ballparks {
       _id
       name_display_full
-      phone_number
-      city
     }
   }
 `;

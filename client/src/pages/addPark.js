@@ -1,30 +1,47 @@
-import React, { useState } from "react";
+//**Dependencies**//
 
+import React, { useState } from "react";
 import { SAVE_VISITED } from "../utils/mutations";
 import { useQuery, useMutation } from "@apollo/client";
 import { QUERY_BALLPARKS } from "../utils/queries";
-const AddPark = () => {
-  const [formState, setFormState] = useState({ phone_number: "", city: "" });
-  const [saveVisited] = useMutation(SAVE_VISITED);
 
+//**SAVE VISITED PARKS PAGE WITH QUERY AND MUTATION**//
+
+const AddPark = (props) => {
+  const [formState, setFormState] = useState({ parkId: "" });
+  const [saveVisited] = useMutation(SAVE_VISITED);
+  //**had loading, data *//
   const { data } = useQuery(QUERY_BALLPARKS);
   const ballParkData = data?.ballparks || [];
   // console.log(ballParkData);
   const handleChange = (event) => {
+    setFormState(event.target.value);
+
+    // console.log("--You are in the handle Change", event.target.value);
     const { name, value } = event.target;
+    console.log("--You are in the handle Change", name, value);
     setFormState({
       ...formState,
+
       [name]: value,
     });
   };
+
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-    await saveVisited({
+    // try {
+    console.log(formState, "----Before it");
+    const mutationResponse = await saveVisited({
       variables: {
-        phone_number: formState.phone_number,
-        city: formState.city,
+        parkId: formState.parkId,
       },
     });
+    console.log(formState, " After Save Visited Mutation Response");
+    console.log(mutationResponse, "---------mutation Response");
+    window.location.href = "/dashboard";
+    // } catch (event) {
+    //   console.log(event);
+    // }
   };
 
   return (
@@ -38,11 +55,16 @@ const AddPark = () => {
               </h2>
               <div className="row mt-10">
                 <h5 className="mt-10">Choose a Park to Add</h5>
-                <select name="venue" onChange={handleChange} id="venue">
+                <select name="parkId" onChange={handleChange} id="parkId">
                   {ballParkData.length > 0
                     ? ballParkData.map((ballPark) => {
                         return (
-                          <option value={ballPark._id} selected="selected">
+                          <option
+                            onChange={handleChange}
+                            value={ballPark._id}
+                            selected="selected"
+                            key={ballPark._id}
+                          >
                             {ballPark.name_display_full}
                           </option>
                         );
@@ -51,7 +73,7 @@ const AddPark = () => {
                 </select>
               </div>
               <button
-                type="button"
+                type="submit"
                 className="btn btn-primary btn-lg mt-5"
                 id="submitButton"
               >
@@ -66,4 +88,3 @@ const AddPark = () => {
 };
 
 export default AddPark;
-//please work
