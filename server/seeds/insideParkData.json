@@ -3,42 +3,126 @@
     "franchise_code": "ARI",
     "name_display_long": "Arizona Diamondbacks",
     "menu_1": "Ultimate Bacon Pub Burger",
-    "menu_2": "Poblano Cheesesteak",
-    "menu_3": "Beer Cheese Baratwurst"
+    "menu_1_loc_name": ["Burger Burger"],
+    "menu_1_loc_section": ["Section 214"],
+    "menu_1_image": "https://img.mlbstatic.com/mlb-images/image/private/t_16x9/t_w372/mlb/rtcvczx7unbsurnkunes.jpg",
+    "menu_2": "Hatch Valley Cheesesteak",
+    "menu_2_loc_name": ["Taste of Chase"],
+    "menu_2_loc_section": ["Section 130"],
+    "menu_2_image": "https://img.mlbstatic.com/mlb-images/image/private/t_16x9/t_w372/mlb/du47jehb1htvirsov6xh.jpg",
+    "menu_3": "Beer Cheese Baratwurst",
+    "menu_3_loc_name": [
+      "Burger Burger",
+      "Taste of Chase",
+      "The Still at Cutwater"
+    ],
+    "menu_3_loc_section": ["Section 214", "Section 130", "Section 139"],
+    "menu_3_image": "https://img.mlbstatic.com/mlb-images/image/private/t_16x9/t_w372/mlb/pyekurjcwevyucbqtpra.jpg"
   },
   {
     "franchise_code": "BS1",
     "name_display_long": "Atlanta Braves",
-    "menu_1": "Gu's Dumplings",
-    "menu_2": "Mongolian Grill Cheddar Bratwurst",
-    "menu_3": "Chili Lime French Fries"
+    "menu_1": "Fox Bros Burger",
+    "menu_1_loc_name": ["Terrapin Taproom"],
+    "menu_1_loc_section": ["Section 160"],
+    "menu_1_image": "http://www.foxbrosbbq.com/image/fox_menu_02.jpg",
+    "menu_2": "H&F Burger",
+    "menu_2_loc_name": ["H&F Burger"],
+    "menu_2_loc_section": ["Section 137", "Section 159"],
+    "menu_2_image": "https://img.mlbstatic.com/mlb-images/image/private/t_16x9/t_w372/mlb/rtcvczx7unbsurnkunes.jpg",
+    "menu_3": "Pork Chop Sandwich",
+    "menu_3_loc_name": ["Braves Big Bite"],
+    "menu_3_loc_section": ["Section 113"],
+    "menu_3_image": "https://assets3.thrillist.com/v1/image/2438906/1584x1054/crop;jpeg_quality=60.jpg"
   },
   {
     "franchise_code": "MLA",
     "name_display_long": "Baltimore Orioles",
-    "menu_1": "Jade Satay",
-    "menu_2": "Corona Street Taco",
-    "menu_3": "Lobster Roll"
+    "menu_1": "Pit Beef Sandwich",
+    "menu_1_loc_name": ["Boog's BBQ"],
+    "menu_1_loc_section": ["Eutaw Street"],
+    "menu_1_image": "https://s3-media0.fl.yelpcdn.com/bphoto/j2YYr9bSZm44SY5c30wx7g/o.jpg",
+    "menu_2": "Pigtown Stack",
+    "menu_2_loc_name": ["Pigtown Stack"],
+    "menu_2_loc_section": ["Section 68"],
+    "menu_2_image": "https://media.bizj.us/view/img/11270479/pigtown-stack*750xx5472-3078-0-285.jpg",
+    "menu_3": "Jumbo Lump Crab Cake",
+    "menu_3_loc_name": ["Harris Creek Oyster and Seafood"],
+    "menu_3_loc_section": ["Eutaw Street"],
+    "menu_3_image": "https://img.mlbstatic.com/mlb-images/image/private/t_16x9/t_w372/mlb/rtcvczx7unbsurnkunes.jpg"
   },
   {
     "franchise_code": "BOS",
     "name_display_long": "Boston Red Sox",
     "menu_1": "Clam Chowder",
+    "menu_1_loc_name": ["Legal Sea Foods"],
+    "menu_1_loc_section": [
+      "Big Concourse",
+      "Home Plate Concourse",
+      "Right Field Roof Deck",
+      "Jersey Street"
+    ],
+    "menu_1_image": "https://i1.wp.com/www.foodlovergirl.com/wp-content/uploads/2018/06/IMG_2223.jpg",
     "menu_2": "Pot Roast Sandwich",
-    "menu_3": "Fried Dough"
+    "menu_2_loc_name": [
+      "Big Concourse",
+      "Visitor's Clubhouse",
+      "First Base Deck"
+    ],
+    "menu_2_loc_section": [
+      "Big Concourse",
+      "Visitor's Clubhouse",
+      "First Base Deck"
+    ],
+    "menu_2_image": "https://cdn.vox-cdn.com/thumbor/db71pe-Me86crKe685R7G6TDaEo=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19338245/7043080647_cac8788bd6_o.jpg",
+    "menu_3": "Fried Dough",
+    "menu_3_loc_name": [
+      "Big Concourse",
+      "Visitor's Clubhouse",
+      "First Base Concourse"
+    ],
+    "menu_3_loc_section": [
+      "Big Concourse",
+      "Visitor's Clubhouse",
+      "First Base Concourse"
+    ],
+    "menu_3_image": "https://media.gettyimages.com/photos/fried-dough-with-caramel-sauce-toasted-pecans-and-powdered-sugar-is-picture-id1227720463?s=2048x2048"
   },
   {
     "franchise_code": "CH2",
+    "name_display_long": "Chicago Cubs",
     "menu_1": "Aloha Chicken Sandwich",
+    "menu_1_loc_name": ["Left Field Classic"],
+    "menu_1_loc_section": ["Aisle 105"],
+    "menu_1_image": "https://img.mlbstatic.com/mlb-images/image/private/t_16x9/t_w372/mlb/tpcszujwtffj2rq69iay.jpg",
     "menu_2": "Bison Hot Dog",
-    "menu_3": "Aged Cheddar Burger"
+    "menu_2_loc_name": ["Clark Street Grill", "Addison Grill"],
+    "menu_2_loc_section": ["Aisle 112", "Aisle 131"],
+    "menu_2_image": "https://www.chicagonow.com/chicago-food-snob/files/2011/06/Loaded-Dogs.jpg",
+    "menu_3": "Aged Cheddar Burger",
+    "menu_3_loc_name": [
+      "Left Field Classics",
+      "Right Field Classics",
+      "Sheffield Corner"
+    ],
+    "menu_3_loc_section": ["Aisle 105", "Aisle 135", "Aisle 142"],
+    "menu_3_image": "https://agreatnumberofthings.com/wp-content/uploads/2019/09/Tony-Mantuano-Double-Cheeseburger-WF-UWP.jpg"
   },
   {
     "franchise_code": "CHA",
-    "name_display_long": "Chicago Cubs",
-    "menu_1": "Spicy Chicken Wings",
+    "name_display_long": "Chicago Whitesox",
+    "menu_1": "Beef Brisket Tacos",
+    "menu_3_loc_name": ["Antique Taco"],
+    "menu_3_loc_section": ["Section 109", "Section 137"],
+    "menu_3_image": "http://bronxpinstripes.com/wp-content/uploads/2019/04/MQRib000.jpg",
     "menu_2": "Buffalo Cauliflower Wraps",
-    "menu_3": "Smoked BBQ Pork Sandwich"
+    "menu_3_loc_name": ["MIGHTY QUINN’S"],
+    "menu_3_loc_section": ["Section 132"],
+    "menu_3_image": "http://bronxpinstripes.com/wp-content/uploads/2019/04/MQRib000.jpg",
+    "menu_3": "Smoked BBQ Pork Sandwich",
+    "menu_3_loc_name": ["MIGHTY QUINN’S"],
+    "menu_3_loc_section": ["Section 132"],
+    "menu_3_image": "http://bronxpinstripes.com/wp-content/uploads/2019/04/MQRib000.jpg"
   },
   {
     "franchise_code": "CN2",
@@ -58,22 +142,49 @@
     "franchise_code": "COL",
     "name_display_long": "Colorado Rockies",
     "menu_1": "Biker Jim's Jackalope Sausage",
+    "menu_1_loc_name": ["Biker Jims"],
+    "menu_1_loc_section": ["Section 107", "Section 331"],
+    "menu_1_image": "https://bikerjimsdogs.com/wp-content/uploads/2021/06/BikerJims-73.jpg",
     "menu_2": "Sliced Brisket Sandwich",
-    "menu_3": "Helton Shakes"
+    "menu_2_loc_name": ["Famous Dave's BBQ"],
+    "menu_2_loc_section": ["Section 152"],
+    "menu_2_image": "https://olo-images-live.imgix.net/49/4940fcefad574d9c8c8ad7dd19bd8e81.png?auto=format%2Ccompress&q=60&cs=tinysrgb&w=500&h=300&fit=fill&fm=png32&bg=transparent&s=e8236cf0f3db5658c0d0bd4dc7908706",
+    "menu_3": "Helton Shakes",
+    "menu_3_loc_name": ["Helton Burger"],
+    "menu_3_loc_section": ["Section 153"],
+    "menu_3_image": "https://img.mlbstatic.com/mlb-images/image/private/t_16x9/t_w640/mlb/gicq4rvi17e2oxndblfa.jpg"
   },
   {
     "franchise_code": "DET",
     "name_display_long": "Detroit Tigers",
     "menu_1": "Coney Dog Egg Rolls",
+    "menu_1_loc_name": ["Big Cat Courat"],
+    "menu_1_loc_section": ["Gate A"],
+    "menu_1_image": "https://dd-res.s3.amazonaws.com/photos/banh_mi__by_shea_34983.JPG",
     "menu_2": "Al Pastor Dog",
-    "menu_3": "Zeppole"
+    "menu_2_loc_name": ["Big Cat Court"],
+    "menu_2_loc_section": ["Gate A", "Midway"],
+    "menu_2_image": "https://pbs.twimg.com/media/D2MUVj2XQAA5Frk.jpg",
+    "menu_3": "Zeppole",
+    "menu_3_loc_name": ["Big Cat Court"],
+    "menu_3_loc_section": ["Gate A"],
+    "menu_3_image": "https://pbs.twimg.com/media/D4UHKJWXoAEhZZG.jpg"
   },
   {
     "franchise_code": "HOU",
     "name_display_long": "Houston Astros",
-    "menu_1": "Mashed Potato Waffle Cone",
-    "menu_2": "Fried Chicken Balls",
-    "menu_3": "Pulled Pork Tacos"
+    "menu_1": "Mashed Potato Chicken & Waffle Cone",
+    "menu_1_loc_name": ["The Street Eats"],
+    "menu_1_loc_section": ["Section 124", "Section 408"],
+    "menu_1_image": "https://cdn.foodbeast.com/content/uploads/2015/03/CBG2NgEUYAA9jqo.png",
+    "menu_2": "BBQ Funnel Cake Meat pie",
+    "menu_2_loc_name": ["Dat Creole"],
+    "menu_2_loc_section": ["Section 103"],
+    "menu_2_image": "https://cdn.abcotvs.com/dip/images/3252164_032318-ewn-4pm-astros-stadium-fare-vid.jpg?w=800&r=16%3A9",
+    "menu_3": "Pulled Pork Tacos",
+    "menu_3_loc_name": ["Kickin’ Nacho"],
+    "menu_3_loc_section": ["Section 120"],
+    "menu_3_image": "https://media.koala.fuzzhq.com/resize/?source=https://koala-marketing-api-production.s3.amazonaws.com/taco-cabana/assets/KickingGrandeNachos.jpeg&height=9999&width=600&max_quality=85"
   },
   {
     "franchise_code": "KCA",
@@ -127,9 +238,18 @@
   {
     "franchise_code": "BLA",
     "name_display_long": "New York Yankees",
-    "menu_1": "Carmalized Onion French Dip Sandwich",
-    "menu_2": "Grilled Cheese Fries",
-    "menu_3": "Flatiron Steak With Fries"
+    "menu_1": "MQrib Sandwich",
+    "menu_3_loc_name": ["MIGHTY QUINN’S"],
+    "menu_3_loc_section": ["Section 132"],
+    "menu_3_image": "http://bronxpinstripes.com/wp-content/uploads/2019/04/MQRib000.jpg",
+    "menu_2": "USDA Prime Steak Sandwich",
+    "menu_3_loc_name": ["Lobel's"],
+    "menu_3_loc_section": ["Section 133"],
+    "menu_3_image": "https://www.lobels.com/images/uploaded/wp-content/uploads/2012/04/Sandwich_081.jpg",
+    "menu_3": "Burrata Burger",
+    "menu_3_loc_name": [""],
+    "menu_3_loc_section": ["Section 120"],
+    "menu_3_image": "https://pbs.twimg.com/media/D_mmL17UEAEs3Is?format=jpg&name=large"
   },
   {
     "franchise_code": "PHA",
@@ -170,8 +290,17 @@
     "franchise_code": "SEA",
     "name_display_long": "Seattle Mariners",
     "menu_1": "Caribbean Roast Sandwich",
+    "menu_1_loc_name": ["Paseo"],
+    "menu_1_loc_section": ["Section 152"],
+    "menu_1_image": "https://static.wixstatic.com/media/b4c77e_5711cc464eec49d597eba06a6d7e155f~mv2.jpg/v1/fill/w_1443,h_510,al_c,q_85,usm_0.66_1.00_0.01/b4c77e_5711cc464eec49d597eba06a6d7e155f~mv2.webp",
     "menu_2": "Big Woody Burger",
-    "menu_3": "Kuku Fries"
+    "menu_2_loc_name": ["Lil Woodys"],
+    "menu_2_loc_section": ["Pen", "Section 218"],
+    "menu_2_image": "https://lilwoodys.square.site/uploads/1/3/0/7/130704727/s140172627905307697_p8_i1_w1200.jpeg?width=640",
+    "menu_3": "Crab Fries",
+    "menu_3_loc_name": ["The Way Back Crab Shack"],
+    "menu_3_loc_section": ["Section 187"],
+    "menu_3_image": "https://s3-media0.fl.yelpcdn.com/bphoto/p1rR3wBC1m-jaQ4jpW6xOQ/o.jpg"
   },
   {
     "franchise_code": "SL4",

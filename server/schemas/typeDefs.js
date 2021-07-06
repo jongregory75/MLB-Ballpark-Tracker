@@ -7,6 +7,7 @@ const typeDefs = gql`
     password: String!
     visitedParks: [BallPark]
   }
+
   type BallPark {
     _id: ID!
     phone_number: String
@@ -73,6 +74,7 @@ const typeDefs = gql`
     division_id: String
     spring_league_id: String
     venue_short: String
+    venue_image: String
   }
 
   type BarInfo {
@@ -88,11 +90,27 @@ const typeDefs = gql`
     venue_rating_3: Float
   }
 
+  type Section {
+    menu_1_loc_section: String
+    menu_2_loc_section: String
+    menu_3_loc_section: String
+  }
+
   type InsidePark {
     franchise_code: String!
+    name_display_long: String
     menu_1: String
+    menu_1_loc_name: [String]
+    menu_1_loc_section: [String]
+    menu_1_image: String
     menu_2: String
+    menu_2_loc_name: [String]
+    menu_2_loc_section: [String]
+    menu_2_image: String
     menu_3: String
+    menu_3_loc_name: [String]
+    menu_3_loc_section: [String]
+    menu_3_image: String
   }
 
   type Auth {

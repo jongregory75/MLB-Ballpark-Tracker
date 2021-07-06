@@ -70,6 +70,9 @@ const ballParkSchema = new Schema({
   venue_short: {
     type: String,
   },
+  venue_image: {
+    type: String,
+  },
 });
 
 const BallPark = model("BallPark", ballParkSchema);

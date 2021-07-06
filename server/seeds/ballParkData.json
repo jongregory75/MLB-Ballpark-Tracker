@@ -18,7 +18,8 @@
     "name_display_long": "Arizona Diamondbacks",
     "store_url": "arizona.diamondbacks.mlb.com",
     "address": "401 East Jefferson Street&#xa;Phoenix, AZ&#x9;85004",
-    "venue_short": "Chase Field"
+    "venue_short": "Chase Field",
+    "venue_image": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/chase_topv2.jpg"
   },
   {
     "phone_number": "",
@@ -84,7 +85,8 @@
     "file_code": "atl",
     "division_id": "204",
     "spring_league_id": "115",
-    "venue_short": "Truist Park"
+    "venue_short": "Truist Park",
+    "venue_image": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/04/suntrust17954.jpg"
   },
   {
     "phone_number": "(410) 685-9800",
@@ -150,7 +152,8 @@
     "file_code": "bal",
     "division_id": "201",
     "spring_league_id": "115",
-    "venue_short": "Oriole Park"
+    "venue_short": "Oriole Park",
+    "venue_image": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/02/camden_top-1.jpg"
   },
   {
     "phone_number": "(617) 267-9440",
@@ -216,7 +219,8 @@
     "file_code": "bos",
     "division_id": "201",
     "spring_league_id": "115",
-    "venue_short": "Fenway Park"
+    "venue_short": "Fenway Park",
+    "venue_image": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/fenway17952.jpg"
   },
   {
     "phone_number": "(773) 404-2827",
@@ -282,7 +286,8 @@
     "file_code": "chc",
     "division_id": "205",
     "spring_league_id": "114",
-    "venue_short": "Wrigley Field"
+    "venue_short": "Wrigley Field",
+    "venue_image": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/wrigley_top.jpg"
   },
   {
     "phone_number": "(312) 674-1000",
@@ -348,7 +353,8 @@
     "file_code": "cws",
     "division_id": "202",
     "spring_league_id": "114",
-    "venue_short": "Guaranteed Rate Fld"
+    "venue_short": "Guaranteed Rate Fld",
+    "venue_image": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/guaranteed_top.jpg"
   },
   {
     "phone_number": "(513) 765-7000",
@@ -414,7 +420,8 @@
     "file_code": "cin",
     "division_id": "205",
     "spring_league_id": "114",
-    "venue_short": "GABP"
+    "venue_short": "GABP",
+    "venue_image": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/gab16951.jpg"
   },
   {
     "phone_number": "(216) 420-4200",
@@ -480,7 +487,8 @@
     "file_code": "cle",
     "division_id": "202",
     "spring_league_id": "114",
-    "venue_short": "Progressive Field"
+    "venue_short": "Progressive Field",
+    "venue_image": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/progressive17_top.jpg"
   },
   {
     "phone_number": "(303) 292-0200",
@@ -546,7 +554,8 @@
     "file_code": "col",
     "division_id": "203",
     "spring_league_id": "114",
-    "venue_short": "Coors Field"
+    "venue_short": "Coors Field",
+    "venue_image": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/coors16952.jpg"
   },
   {
     "phone_number": "(313) 471-2000",
@@ -612,7 +621,8 @@
     "file_code": "det",
     "division_id": "202",
     "spring_league_id": "115",
-    "venue_short": "Comerica Park"
+    "venue_short": "Comerica Park",
+    "venue_image": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/comerica17_top.jpg"
   },
   {
     "phone_number": "(713) 259-8000",
@@ -678,7 +688,8 @@
     "file_code": "hou",
     "division_id": "200",
     "spring_league_id": "115",
-    "venue_short": "Minute Maid Park"
+    "venue_short": "Minute Maid Park",
+    "venue_image": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/minute-top.jpg"
   },
   {
     "phone_number": "(816) 921-8000",
@@ -744,7 +755,8 @@
     "file_code": "kc",
     "division_id": "202",
     "spring_league_id": "114",
-    "venue_short": "Kauffman Stadium"
+    "venue_short": "Kauffman Stadium",
+    "venue_image": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/kauff15952.jpg"
   },
   {
     "phone_number": "(714) 940-2000",
@@ -810,7 +822,8 @@
     "file_code": "ana",
     "division_id": "200",
     "spring_league_id": "114",
-    "venue_short": "Angel Stadium"
+    "venue_short": "Angel Stadium",
+    "venue_image": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/02/angel15955.jpg"
   },
   {
     "phone_number": "(323) 224-1500",
@@ -876,7 +889,8 @@
     "file_code": "la",
     "division_id": "203",
     "spring_league_id": "114",
-    "venue_short": "Dodger Stadium"
+    "venue_short": "Dodger Stadium",
+    "venue_image": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/dodger16_top3.jpg"
   },
   {
     "phone_number": "",
@@ -942,7 +956,8 @@
     "file_code": "mia",
     "division_id": "204",
     "spring_league_id": "115",
-    "venue_short": "loanDepot park"
+    "venue_short": "loanDepot park",
+    "venue_image": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/marlins_topv2.jpg"
   },
   {
     "phone_number": "(414) 902-4400",
@@ -1008,7 +1023,8 @@
     "file_code": "mil",
     "division_id": "205",
     "spring_league_id": "114",
-    "venue_short": "Amer. Family Field"
+    "venue_short": "Amer. Family Field",
+    "venue_image": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/aff21953.jpg"
   },
   {
     "phone_number": "(612) 659-3400",
@@ -1074,7 +1090,8 @@
     "file_code": "min",
     "division_id": "202",
     "spring_league_id": "115",
-    "venue_short": "Target Field"
+    "venue_short": "Target Field",
+    "venue_image": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/target_topv2.jpg"
   },
   {
     "phone_number": "(718) 507-6387",
@@ -1140,7 +1157,8 @@
     "file_code": "nym",
     "division_id": "204",
     "spring_league_id": "115",
-    "venue_short": "Citi Field"
+    "venue_short": "Citi Field",
+    "venue_image": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/chase_topv2.jpg"
   },
   {
     "phone_number": "(718) 293-4300",
@@ -1206,7 +1224,8 @@
     "file_code": "nyy",
     "division_id": "201",
     "spring_league_id": "115",
-    "venue_short": "Yankee Stadium"
+    "venue_short": "Yankee Stadium",
+    "venue_image": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/yankee_topv2.jpg"
   },
   {
     "phone_number": "(510) 638-4900",
@@ -1272,7 +1291,8 @@
     "file_code": "oak",
     "division_id": "200",
     "spring_league_id": "114",
-    "venue_short": "Oakland Coliseum"
+    "venue_short": "Oakland Coliseum",
+    "venue_image": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/oco_topv2.jpg"
   },
   {
     "phone_number": "(215) 463-6000",
@@ -1338,7 +1358,8 @@
     "file_code": "phi",
     "division_id": "204",
     "spring_league_id": "115",
-    "venue_short": "Citizens Bank Park"
+    "venue_short": "Citizens Bank Park",
+    "venue_image": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/citbank_topv2.jpg"
   },
   {
     "phone_number": "(412) 323-5000",
@@ -1404,7 +1425,8 @@
     "file_code": "pit",
     "division_id": "205",
     "spring_league_id": "115",
-    "venue_short": "PNC Park"
+    "venue_short": "PNC Park",
+    "venue_image": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/pnc_topv2.jpg"
   },
   {
     "phone_number": "(619) 795-5000",
@@ -1470,7 +1492,8 @@
     "file_code": "sd",
     "division_id": "203",
     "spring_league_id": "114",
-    "venue_short": "Petco Park"
+    "venue_short": "Petco Park",
+    "venue_image": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/petco17markwhitt.jpg"
   },
   {
     "phone_number": "(415) 972-2000",
@@ -1536,7 +1559,8 @@
     "file_code": "sf",
     "division_id": "203",
     "spring_league_id": "114",
-    "venue_short": "Oracle Park"
+    "venue_short": "Oracle Park",
+    "venue_image": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/att17952.jpg"
   },
   {
     "phone_number": "(206) 346-4000",
@@ -1602,7 +1626,8 @@
     "file_code": "sea",
     "division_id": "200",
     "spring_league_id": "114",
-    "venue_short": "T-Mobile Park"
+    "venue_short": "T-Mobile Park",
+    "venue_image": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/safeco17950.jpg"
   },
   {
     "phone_number": "(314) 345-9600",
@@ -1668,7 +1693,8 @@
     "file_code": "stl",
     "division_id": "205",
     "spring_league_id": "115",
-    "venue_short": "Busch Stadium"
+    "venue_short": "Busch Stadium",
+    "venue_image": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/busch17951.jpg"
   },
   {
     "phone_number": "(727) 825-3137",
@@ -1734,7 +1760,8 @@
     "file_code": "tb",
     "division_id": "201",
     "spring_league_id": "115",
-    "venue_short": "Tropicana Field"
+    "venue_short": "Tropicana Field",
+    "venue_image": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/tropicana_topv2.jpg"
   },
   {
     "phone_number": "(817) 533-1972",
@@ -1800,7 +1827,8 @@
     "file_code": "tex",
     "division_id": "200",
     "spring_league_id": "114",
-    "venue_short": "Globe Life Park"
+    "venue_short": "Globe Life Park",
+    "venue_image": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/06/globe21950-1.jpg"
   },
   {
     "phone_number": "(416) 341-1000",
@@ -1866,7 +1894,8 @@
     "file_code": "tor",
     "division_id": "201",
     "spring_league_id": "115",
-    "venue_short": "Rogers Centre"
+    "venue_short": "Rogers Centre",
+    "venue_image": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/rogers179532.jpg"
   },
   {
     "phone_number": "(202) 349-0400",
@@ -1932,6 +1961,7 @@
     "file_code": "was",
     "division_id": "204",
     "spring_league_id": "115",
-    "venue_short": "Nationals Park"
+    "venue_short": "Nationals Park",
+    "venue_image": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/nats17_top.jpg"
   }
 ]
