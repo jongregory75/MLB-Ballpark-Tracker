@@ -22,6 +22,11 @@ const ParkById = (franchise_code) => {
                   <h4>Name:{parkbyid.name_display_long}</h4>
                 </div>
                 <div className="card-body">
+                  <img
+                    width="300"
+                    src={parkbyid.venue_image}
+                    alt={parkbyid.venue_name}
+                  />
                   <h4>Stadium: {parkbyid.venue_name}</h4>
                   <h4>Address: {parkbyid.address_line1}</h4>
                   <h4>Phone Number: {parkbyid.phone_number}</h4>
