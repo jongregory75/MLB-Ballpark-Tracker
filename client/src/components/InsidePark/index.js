@@ -20,8 +20,20 @@ const InsidePark = (franchise_code) => {
               <div className="card mb-3" key="insideMenu">
                 <div className="card-body">
                   <h4>Food #1: {insidepark.menu_1}</h4>
+                  <img width="300" src={insidepark.menu_1_image} />
+                  <h6>Where: {insidepark.menu_1_loc_name}</h6>
+                  <h6>{insidepark.menu_1_loc_section}</h6>
+                  <td>---</td>
                   <h4>Food #2: {insidepark.menu_2}</h4>
+                  <img width="300" src={insidepark.menu_2_image} />
+                  <h6>Where: {insidepark.menu_2_loc_name}</h6>
+                  <h6>{insidepark.menu_2_loc_section}</h6>
+                  <td>---</td>
                   <h4>Food #3: {insidepark.menu_3}</h4>
+                  <img width="300" src={insidepark.menu_3_image} />
+                  <h6>Where: {insidepark.menu_3_loc_name} </h6>
+                  <h6>{insidepark.menu_3_loc_section} </h6>
+                  <td>---</td>
                 </div>
               </div>
             ))}
